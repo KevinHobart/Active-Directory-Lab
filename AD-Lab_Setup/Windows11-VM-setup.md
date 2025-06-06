@@ -30,7 +30,23 @@ This guide will provide instructions on how to download, create and set up a Win
    ![VM-Hardware](https://github.com/user-attachments/assets/5aac47d3-4e29-41b1-b53c-c1598cedfa38)
 7. **Virtual Hard disk**
 
-   - Select **Create a Virtual Hard Disk Now**
-   - Leave all else as default
+   - Select **Create a Virtual Hard Disk Now**.
+   - Leave all else as default.
    - Select **Next**
    ![VM-HD](https://github.com/user-attachments/assets/e1c91087-1614-4a97-8b1c-ccda854c2b49)
+8. **Summary**
+
+   - This shows a summary of the configurations you have chosen for the VM.
+   - Ensure that **Skip Unattended Instal** is *true*.
+   - Select **Finish**
+   ![VM-Summary](https://github.com/user-attachments/assets/09b5c35a-3b43-4275-99b2-ce61377f391e)
+
+---
+
+9. Powering on Windows 11 VM for the first time.
+
+    - Select **Windows 11** VM and Select the green **Start** arrow.
+    - Click inside of the newly opened window.  It will display **Press any key to boot from CD or DVD..**
+
+10. Installion of Windows 11      
+
