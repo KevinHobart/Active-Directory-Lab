@@ -122,13 +122,29 @@ This guide will provide instructions on how to download, create and set up a Win
 ## Step 5: Install Guest Tools onto the virtual machine
 
 1. Log in to Windows 11
-2. Go to **Devices** and then select **Insert Guest Additions CD image...**
-3. If Autorun doesn't work:
+   ![VM-final1](https://github.com/user-attachments/assets/73ee0f45-ceb6-46a7-8539-aea4e26a7093)
+
+3. Go to **Devices** and then select **Insert Guest Additions CD image...**
+   ![VM-final2](https://github.com/user-attachments/assets/69a6730a-1728-48df-8d48-d268212a0bdb)
+
+5. If Autorun doesn't work:
    - Go to **File Explorer**
+     ![Guest-add1](https://github.com/user-attachments/assets/456be18c-e22c-47fa-86cc-18cf16b50c72)
+
    - Select **CD Drive**
+     ![VM-Guestadd2](https://github.com/user-attachments/assets/3164d358-e48e-4a92-b36d-e0c4cd5c596d)
+
    - Right Click on **VBoxWindowsAdditions-amd64** and run as administrator.
+     ![VM-guestadd3](https://github.com/user-attachments/assets/3ffb3403-56ba-46cc-a01a-0e4c698ecb30)
+
    - Select **Next** to start Setup.  Stay with defaults on all.
+     ![VM-guest4](https://github.com/user-attachments/assets/038e4274-56fd-445e-8f18-c38a9a3647b2)
+
    - When finished, Select **Reboot now**, then select **finish**  If this screen is not visible, it might be behind the File Explorer page. You can close the File Explorer, if needed.
-4. Once Windows 11 reboots, you can log in as the user you created.
+     ![VM-guest5](https://github.com/user-attachments/assets/887c88ab-5c29-46bd-865b-dcbb4f1f0fb1)
+
+6. Once Windows 11 reboots, you can log in as the user you created.
+   ![VM-guest6](https://github.com/user-attachments/assets/ba139196-95fc-4392-8a34-bd06273389e4)
+
    
 
