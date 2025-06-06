@@ -44,21 +44,27 @@ This guide will provide instructions on how to download, create and set up a Win
 
 ---
 
-## Step 3: Powering on and Installing Windows 11
+## Step 3: Powering on and Installing Windows 11 in VirtualBox
 1. Powering on Windows 11 VM for the first time.
 
    - Select **Windows 11** VM, then Select the green **Start** arrow.
+   ![VM-Start](https://github.com/user-attachments/assets/9e4e144f-5bfb-448f-bac4-9ec50aff4b1a)
+
    - Click inside of the newly opened window.  It will display **Press any key to boot from CD or DVD..**  Press any key to continue.
 
 2. Installion of Windows 11 (Windows Setup).
 
-   - Select **Language**, **Time and Currency** and **Keyboard or input method**.  Leave as default for English.
+   - Select **Language to install** and  **Time and Currency format**.  Leave as default for English.
    - Select **Next**
-   - Select **Install now**  NOTE: Windows will reboot a few times during the installation process.  This is normal, and it should pick up where it left off.
-   - Accept the **Microsoft Software License Terms**
+   - Select **Keyboard or input method**  Leave as default for US.
    - Select **Next**
-   - Select **Custom: Install Windows only (advanced)**.
-   - Use Defaults and Select **Next**.  This will take a little bit and will probably restart a few times.
+   - Select **Install Windows 11**, select the **I agree...** box.  NOTE: Windows might reboot a few times during the installation process.  This is normal, and it should pick up where it left off.
+   - Select **Next**
+   - Accept the **Applicable notices and License Terms**
+   - Select **Accept**
+   - **Select location to install Windows 11**
+   - Use Defaults and Select **Next**.
+   - Select **Install**
 
 3. Installation of Windows 11 (con't)
 
