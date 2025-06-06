@@ -14,7 +14,7 @@ This guide will provide instructions on how to download, create and set up a Win
 
 ---
 
-## Step 2: Add the new virtual machine to VirtualBox
+## Step 2: Creating the new virtual machine in VirtualBox
 1. Open VirtualBox and select **New** to add a new virtual machine.
 
    - Name: Name the virtual machine.  Example:  Windows 11, Windows 11 Lab, Windows 11 AD Lab.
@@ -44,7 +44,7 @@ This guide will provide instructions on how to download, create and set up a Win
 
 ---
 
-## Step 3: Powering on and Installing Windows 11 in VirtualBox
+## Step 3: Powering on and Installing Windows 11 on the virtual machine
 1. Powering on Windows 11 VM for the first time.
 
    - Select **Windows 11** VM, then Select the green **Start** arrow.
@@ -56,8 +56,12 @@ This guide will provide instructions on how to download, create and set up a Win
 
    - Select **Language to install** and  **Time and Currency format**.  Leave as default for English.
    - Select **Next**
+     ![VM_setup1](https://github.com/user-attachments/assets/732a48db-7083-4dc5-833d-0ae0f3db183a)
+
    - Select **Keyboard or input method**  Leave as default for US.
    - Select **Next**
+     ![VM-setup2](https://github.com/user-attachments/assets/62e717c2-1175-4e34-b8d0-9455ee923f67)
+
    - Select **Install Windows 11**, select the **I agree...** box.  NOTE: Windows might reboot a few times during the installation process.  This is normal, and it should pick up where it left off.
    - Select **Next**
    - Accept the **Applicable notices and License Terms**
@@ -66,7 +70,34 @@ This guide will provide instructions on how to download, create and set up a Win
    - Use Defaults and Select **Next**.
    - Select **Install**
 
-3. Installation of Windows 11 (con't)
+---
 
-   - 
+## Step 4: Continue final setup and create user account for Windows 11 VM
+
+1. Select the right region, followed by the right keyboard layout. Select **Skip** for second keyboard layout.
+2. Create User Account
+   - -**Important**-
+   - Select **Sign in options**
+   - Select **Domain join instead**  This will allow you to join this computer (Windows 11 VM) to the Active Directory Domain Controller.
+   - Enter a name.
+   - Enter and Confirm your password.
+   - Add your security questions (3).
+3. Choose privacy settings for your device.
+
+   - Adjust these to your preference
+   - Select **Accept**
+4. Windows will now update, if necessary (this could take some time).  Once Windows 11 is done updating, it will restart and you will presented with the login screen.
+
+## Step 5: Install Guest Tools onto the virtual machine
+
+1. Log in to Windows 11
+2. Go to **Devices** and then select **Insert Guest Additions CD image...**
+3. If Autorun doesn't work:
+   - Go to **File Explorer**
+   - Select **CD Drive**
+   - Right Click on **VBoxWindowsAdditions-amd64** and run as administrator.
+   - Select **Next** to start Setup.  Stay with defaults on all.
+   - When finished, Select **Reboot now**, then select **finish**  If this screen is not visible, it might be behind the File Explorer page. You can close the File Explorer, if needed.
+4. Once Windows 11 reboots, you can log in as the user you created.
+   
 
