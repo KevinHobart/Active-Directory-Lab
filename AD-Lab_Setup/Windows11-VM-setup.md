@@ -115,6 +115,7 @@ This guide will provide instructions on how to download, create and set up a Win
 5. Windows will now update if necessary (this could take some time).  Once Windows 11 is done updating, it will restart and you will presented with the login screen.
    ![VM-user-acct8](https://github.com/user-attachments/assets/8a792ca5-7718-4e06-aa23-6789ebf569eb)
 
+---
 
 ## Step 5: Install Guest Tools onto the virtual machine
 
