@@ -69,13 +69,16 @@ This guide will provide instructions on how to download, create and set up a Win
 
    - Accept the **Applicable notices and License Terms**
    - Select **Accept**
+     
      ![license-terms](https://github.com/user-attachments/assets/cb812eb6-d0f6-48db-a382-76d83a250483)
 
    - **Select location to install Windows 11**
    - Use Defaults and Select **Next**.
+     
      ![VM-setup4](https://github.com/user-attachments/assets/6713106e-a466-49e3-9eb7-f5a5c9a0a087)
 
    - Select **Install**
+     
      ![VM-setup5](https://github.com/user-attachments/assets/0c7fc096-efb5-4b1d-9c8f-d8bf0f9d6b8b)
 
 
@@ -84,18 +87,37 @@ This guide will provide instructions on how to download, create and set up a Win
 ## Step 4: Continue final setup and create user account for Windows 11 VM
 
 1. Select the right region, followed by the right keyboard layout. Select **Skip** for second keyboard layout.
-2. Create User Account
+   ![VM-setup6](https://github.com/user-attachments/assets/9ae23005-e112-4c94-8ea3-6fffc3aa33d7)
+   ![VM-setup7](https://github.com/user-attachments/assets/e11bb6f8-e25b-4882-b1b1-ff6629f61042)
+   ![VM-setup8](https://github.com/user-attachments/assets/642368eb-d04f-47ee-bcc1-7c7d78dfa33e)
+
+
+
+3. Create User Account
    - -**Important**-
    - Select **Sign in options**
-   - Select **Domain join instead**  This will allow you to join this computer (Windows 11 VM) to the Active Directory Domain Controller.
-   - Enter a name.
-   - Enter and Confirm your password.
-   - Add your security questions (3).
-3. Choose privacy settings for your device.
+     ![W11-user-acct1](https://github.com/user-attachments/assets/4c12e394-aff6-4541-a3b9-b0e1bfc33f80)
 
+   - Select **Domain join instead**.  This will allow you to join this computer (Windows 11 VM) to the Active Directory Domain Controller.
+     ![VM-user-acct2](https://github.com/user-attachments/assets/5a84c26a-799c-49a9-9c48-08fb59b65925)
+
+   - Enter a name.
+     ![VM-user-acct3](https://github.com/user-attachments/assets/5628e16e-12a1-4b4a-8f68-4105b20b5f81)
+
+   - Enter and Confirm your password.
+     ![VM-user-acct4](https://github.com/user-attachments/assets/1563232f-d1fa-41ed-a4c4-21ce26cb454e)
+
+   - Add your security questions (3).
+     ![VM-user-acct6](https://github.com/user-attachments/assets/cca6c846-08ae-4155-83fc-4095e2468116)
+
+4. Choose privacy settings for your device.
    - Adjust these to your preference
    - Select **Accept**
-4. Windows will now update, if necessary (this could take some time).  Once Windows 11 is done updating, it will restart and you will presented with the login screen.
+     ![VM-user-acct7](https://github.com/user-attachments/assets/2c4c8b4d-552d-4fa7-91d9-1455fa9e2961)
+
+5. Windows will now update, if necessary (this could take some time).  Once Windows 11 is done updating, it will restart and you will presented with the login screen.
+   ![VM-user-acct8](https://github.com/user-attachments/assets/8a792ca5-7718-4e06-aa23-6789ebf569eb)
+
 
 ## Step 5: Install Guest Tools onto the virtual machine
 
