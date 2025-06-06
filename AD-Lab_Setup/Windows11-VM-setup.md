@@ -47,10 +47,20 @@ This guide will provide instructions on how to download, create and set up a Win
 ## Step 3: Powering on and Installing Windows 11
 1. Powering on Windows 11 VM for the first time.
 
-   - Select **Windows 11** VM and Select the green **Start** arrow.
+   - Select **Windows 11** VM, then Select the green **Start** arrow.
    - Click inside of the newly opened window.  It will display **Press any key to boot from CD or DVD..**  Press any key to continue.
 
-2. Installion of Windows 11
+2. Installion of Windows 11 (Windows Setup).
+
+   - Select **Language**, **Time and Currency** and **Keyboard or input method**.  Leave as default for English.
+   - Select **Next**
+   - Select **Install now**  NOTE: Windows will reboot a few times during the installation process.  This is normal, and it should pick up where it left off.
+   - Accept the **Microsoft Software License Terms**
+   - Select **Next**
+   - Select **Custom: Install Windows only (advanced)**.
+   - Use Defaults and Select **Next**.  This will take a little bit and will probably restart a few times.
+
+3. Installation of Windows 11 (con't)
 
    - 
 
