@@ -14,7 +14,8 @@ This guide will provide instructions on how to download, create and set up a Win
 
 ---
 
-5. Open VirtualBox and select **New** to add a new virtual machine.
+## Step 2: Add the new virtual machine to VirtualBox
+1. Open VirtualBox and select **New** to add a new virtual machine.
 
    - Name: Name the virtual machine.  Example:  Windows 11, Windows 11 Lab, Windows 11 AD Lab.
    - Folder: Leave as default unless you have a specific folder you would like the VM files to be stored in.
@@ -22,19 +23,19 @@ This guide will provide instructions on how to download, create and set up a Win
    - Be sure to select **Skip Unatteneded Installation**.
    - Select **Next**
     ![VB1](https://github.com/user-attachments/assets/bde219a6-778c-46e0-bc01-800540ec519e)
-6. **Hardware**  This is where you will designate hardware resources to the VM.  It is best to keep the slider in the green area.
+2. **Hardware**  This is where you will designate hardware resources to the VM.  It is best to keep the slider in the green area.
 
    - Base Memory: 4GB Minimum, 8GB Recommended.
    - Processors: 2 Minimum, 4 Recommended.
    - Select **Next**
    ![VM-Hardware](https://github.com/user-attachments/assets/5aac47d3-4e29-41b1-b53c-c1598cedfa38)
-7. **Virtual Hard disk**
+3. **Virtual Hard disk**
 
    - Select **Create a Virtual Hard Disk Now**.
    - Leave all else as default.
    - Select **Next**
    ![VM-HD](https://github.com/user-attachments/assets/e1c91087-1614-4a97-8b1c-ccda854c2b49)
-8. **Summary**
+4. **Summary**
 
    - This shows a summary of the configurations you have chosen for the VM.
    - Ensure that **Skip Unattended Instal** is *true*.
@@ -43,10 +44,13 @@ This guide will provide instructions on how to download, create and set up a Win
 
 ---
 
-9. Powering on Windows 11 VM for the first time.
+## Step 3: Powering on and Installing Windows 11
+1. Powering on Windows 11 VM for the first time.
 
-    - Select **Windows 11** VM and Select the green **Start** arrow.
-    - Click inside of the newly opened window.  It will display **Press any key to boot from CD or DVD..**
+   - Select **Windows 11** VM and Select the green **Start** arrow.
+   - Click inside of the newly opened window.  It will display **Press any key to boot from CD or DVD..**  Press any key to continue.
 
-10. Installion of Windows 11      
+2. Installion of Windows 11
+
+   - 
 
