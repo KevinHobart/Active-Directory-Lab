@@ -117,7 +117,7 @@ This guide will provide instructions on how to download, create and set up a Win
 
 ---
 
-## Step 5: Install Guest Tools onto the virtual machine
+## Step 5: Install Guest Tools onto the virtual machine and take a snapshot.
 
 1. Log in to Windows 11
    ![VM-final1](https://github.com/user-attachments/assets/73ee0f45-ceb6-46a7-8539-aea4e26a7093)
@@ -143,6 +143,17 @@ This guide will provide instructions on how to download, create and set up a Win
 
 6. Once Windows 11 reboots, you can log in as the user you created.
    ![VM-guest6](https://github.com/user-attachments/assets/ba139196-95fc-4392-8a34-bd06273389e4)
+
+7. **It is recommended that you take a snapshot of the Windows 11 VM at this point.**  A snapshot can be used a backup of the VM in it's current state.  If you install or change something in Windows 11 that causes it not to work properly, or you change things on purpose to break it, or you just want to revert the VM back to a prior state, having saved a snapshot will allow you to revert the machine back to a point before you made the changes.
+
+   - Select **Machine**, then **Take Snapshot**.
+     ![Snapshot1](https://github.com/user-attachments/assets/1ac7a0b4-9f93-4f90-bad3-b250bb69cc72)
+
+   - Name the Snapshot, then select *Ok*.  For the initial snapshot, try naming it something like: CleanInstall, NewInstall, CleanWindows.
+     ![Snapshot2](https://github.com/user-attachments/assets/71649b18-41b4-4b72-b6e2-b2797025a05b)
+     
+
+
 
    
 
