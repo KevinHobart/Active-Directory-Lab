@@ -68,17 +68,14 @@ This guide will provide instructions on how to download, create and set up a Win
      ![VM-setup3](https://github.com/user-attachments/assets/cd3d2c2a-8ebb-4ed2-9327-ffa44ccb8695)
 
    - Accept the **Applicable notices and License Terms**
-   - Select **Accept**
-     
+   - Select **Accept**  
      ![license-terms](https://github.com/user-attachments/assets/cb812eb6-d0f6-48db-a382-76d83a250483)
 
    - **Select location to install Windows 11**
    - Use Defaults and Select **Next**.
-     
      ![VM-setup4](https://github.com/user-attachments/assets/6713106e-a466-49e3-9eb7-f5a5c9a0a087)
 
    - Select **Install**
-     
      ![VM-setup5](https://github.com/user-attachments/assets/0c7fc096-efb5-4b1d-9c8f-d8bf0f9d6b8b)
 
 
@@ -115,7 +112,7 @@ This guide will provide instructions on how to download, create and set up a Win
    - Select **Accept**
      ![VM-user-acct7](https://github.com/user-attachments/assets/2c4c8b4d-552d-4fa7-91d9-1455fa9e2961)
 
-5. Windows will now update, if necessary (this could take some time).  Once Windows 11 is done updating, it will restart and you will presented with the login screen.
+5. Windows will now update if necessary (this could take some time).  Once Windows 11 is done updating, it will restart and you will presented with the login screen.
    ![VM-user-acct8](https://github.com/user-attachments/assets/8a792ca5-7718-4e06-aa23-6789ebf569eb)
 
 
@@ -140,7 +137,7 @@ This guide will provide instructions on how to download, create and set up a Win
    - Select **Next** to start Setup.  Stay with defaults on all.
      ![VM-guest4](https://github.com/user-attachments/assets/038e4274-56fd-445e-8f18-c38a9a3647b2)
 
-   - When finished, Select **Reboot now**, then select **finish**  If this screen is not visible, it might be behind the File Explorer page. You can close the File Explorer, if needed.
+   - When finished, Select **Reboot now**, then select **finish**. If this screen is not visible, it might be behind the File Explorer page. You can close the File Explorer, if needed.
      ![VM-guest5](https://github.com/user-attachments/assets/887c88ab-5c29-46bd-865b-dcbb4f1f0fb1)
 
 6. Once Windows 11 reboots, you can log in as the user you created.
