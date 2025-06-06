@@ -22,25 +22,25 @@ This guide will provide instructions on how to download, create and set up a Win
    - ISO Image: Select the location of the ISO you downloaded.
    - Be sure to select **Skip Unatteneded Installation**.
    - Select **Next**
-    ![VB1](https://github.com/user-attachments/assets/bde219a6-778c-46e0-bc01-800540ec519e)
+     ![VB1](https://github.com/user-attachments/assets/bde219a6-778c-46e0-bc01-800540ec519e)
 2. **Hardware**  This is where you will designate hardware resources to the VM.  It is best to keep the slider in the green area.
 
    - Base Memory: 4GB Minimum, 8GB Recommended.
    - Processors: 2 Minimum, 4 Recommended.
    - Select **Next**
-   ![VM-Hardware](https://github.com/user-attachments/assets/5aac47d3-4e29-41b1-b53c-c1598cedfa38)
+     ![VM-Hardware](https://github.com/user-attachments/assets/5aac47d3-4e29-41b1-b53c-c1598cedfa38)
 3. **Virtual Hard disk**
 
    - Select **Create a Virtual Hard Disk Now**.
    - Leave all else as default.
    - Select **Next**
-   ![VM-HD](https://github.com/user-attachments/assets/e1c91087-1614-4a97-8b1c-ccda854c2b49)
+     ![VM-HD](https://github.com/user-attachments/assets/e1c91087-1614-4a97-8b1c-ccda854c2b49)
 4. **Summary**
 
    - This shows a summary of the configurations you have chosen for the VM.
    - Ensure that **Skip Unattended Instal** is *true*.
    - Select **Finish**
-   ![VM-Summary](https://github.com/user-attachments/assets/09b5c35a-3b43-4275-99b2-ce61377f391e)
+    ![VM-Summary](https://github.com/user-attachments/assets/09b5c35a-3b43-4275-99b2-ce61377f391e)
 
 ---
 
@@ -48,9 +48,10 @@ This guide will provide instructions on how to download, create and set up a Win
 1. Powering on Windows 11 VM for the first time.
 
    - Select **Windows 11** VM, then Select the green **Start** arrow.
-   ![VM-Start](https://github.com/user-attachments/assets/9e4e144f-5bfb-448f-bac4-9ec50aff4b1a)
+     ![VM-Start](https://github.com/user-attachments/assets/9e4e144f-5bfb-448f-bac4-9ec50aff4b1a)
 
    - Click inside of the newly opened window.  It will display **Press any key to boot from CD or DVD..**  Press any key to continue.
+     ![PressAnyKey](https://github.com/user-attachments/assets/30858b05-253b-430e-b9f2-ca3787fc4c90)
 
 2. Installion of Windows 11 (Windows Setup).
 
@@ -64,11 +65,19 @@ This guide will provide instructions on how to download, create and set up a Win
 
    - Select **Install Windows 11**, select the **I agree...** box.  NOTE: Windows might reboot a few times during the installation process.  This is normal, and it should pick up where it left off.
    - Select **Next**
+     ![VM-setup3](https://github.com/user-attachments/assets/cd3d2c2a-8ebb-4ed2-9327-ffa44ccb8695)
+
    - Accept the **Applicable notices and License Terms**
    - Select **Accept**
+     ![license-terms](https://github.com/user-attachments/assets/cb812eb6-d0f6-48db-a382-76d83a250483)
+
    - **Select location to install Windows 11**
    - Use Defaults and Select **Next**.
+     ![VM-setup4](https://github.com/user-attachments/assets/6713106e-a466-49e3-9eb7-f5a5c9a0a087)
+
    - Select **Install**
+     ![VM-setup5](https://github.com/user-attachments/assets/0c7fc096-efb5-4b1d-9c8f-d8bf0f9d6b8b)
+
 
 ---
 
