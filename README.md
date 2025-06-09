@@ -1,7 +1,11 @@
 # Active-Directory-Lab
 *Place holder for guided Active Directory Lab from Practical Help Desk course from TCM Security.*
-## Objective
-[Brief Objective - Remove this afterwards]
+## Overview
+This project demonstrates a comprehensive setup of an Active Directory home lab using virtualization (VirtualBox).  
+The Active Directory home lab can then be used as a learning platform to simulate various IT workflows.  
+The primary goals of this lab are:
+- To build a virtualized Active Directory lab environment
+- 
 
 
 
