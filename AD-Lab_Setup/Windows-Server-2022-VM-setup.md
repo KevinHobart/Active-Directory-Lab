@@ -104,10 +104,10 @@ This guide provides step-by-step instructions for downloading, creating, and set
    - Open **File Explorer**
    - Navigate to **CD Drive**
    - Right-click **VBoxWindowsAdditions-amd64.exe** and choose **Run as administrator**
-   > 📸 *Insert screenshot of VBox setup file and right-click context menu*
+   > 📸 17-19
 
 4. Follow the Guest Additions setup wizard. Keep all defaults.
-   > 📸 *Insert screenshot of setup wizard*
+   > 📸 20,21
 
 5. Once finished, reboot the VM.
 
@@ -117,7 +117,7 @@ This guide provides step-by-step instructions for downloading, creating, and set
 
    - In VirtualBox, go to **Machine > Take Snapshot**
    - Name it something like `WS2022-CleanInstall`
-   > 📸 *Insert screenshot of snapshot dialog*
+   > 📸 22
 
 ---
 
