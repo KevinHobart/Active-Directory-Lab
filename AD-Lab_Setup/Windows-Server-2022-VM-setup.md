@@ -86,7 +86,7 @@ This guide provides step-by-step instructions for downloading, creating, and set
 1. On first boot, you’ll be prompted to set a password for the built-in **Administrator** account.
 
    - Enter and confirm a strong password.
-   > 📸 *Insert screenshot of password setup*
+   > 📸 13
 
 2. Press **Ctrl+Alt+Del** to log in, then enter the password you just set.
    > 📸 *Insert screenshot of login screen*
