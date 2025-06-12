@@ -89,7 +89,7 @@ This guide provides step-by-step instructions for downloading, creating, and set
    > 📸 13
 
 2. Press **Ctrl+Alt+Del** to log in, then enter the password you just set.
-   > 📸 *Insert screenshot of login screen*
+   > 📸 14,15
 
 ---
 
@@ -98,7 +98,7 @@ This guide provides step-by-step instructions for downloading, creating, and set
 1. Log in to your **Windows Server 2022** VM.
 
 2. Go to the **Devices** menu in the VirtualBox window and choose **Insert Guest Additions CD image…**
-   > 📸 *Insert screenshot of this VirtualBox menu option*
+   > 📸 16
 
 3. If Autorun doesn't trigger:
    - Open **File Explorer**
