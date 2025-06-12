@@ -39,14 +39,14 @@ This guide provides step-by-step instructions for downloading, creating, and set
    - Choose **Create a Virtual Hard Disk Now**
    - Default settings are fine: 50GB dynamically allocated (you can increase based on use case)
    - Click **Next**
-   > 📸 *Insert screenshot of hard disk setup*
+   > 📸 6
 
 4. **Summary**
 
    - Double-check settings
    - Confirm that **Skip Unattended Install** is *true*
    - Click **Finish**
-   > 📸 *Insert screenshot of final summary before creation*
+   > 📸 7
 
 ---
 
