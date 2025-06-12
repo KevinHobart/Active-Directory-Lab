@@ -1,16 +1,31 @@
 # Active-Directory-Lab
-*Place holder for guided Active Directory Lab from Practical Help Desk course from TCM Security.*
+
+---
+
 ## Overview
-This project demonstrates a comprehensive setup of an Active Directory home lab using virtualization (VirtualBox).  
+This project demonstrates the comprehensive setup of an Active Directory home lab using virtualization (VirtualBox).  
 The Active Directory home lab can then be used as a learning platform to simulate various IT workflows.  
 The primary goals of this lab are:
-- To build a virtualized Active Directory lab environment
-- 
+
+#### 1. Create two virtual machines on VirtualBox:
+  - Windows 11
+  - Windows Server-2022
+#### 2. Configure Windows 11 VM:
+  - Configure to allow connection with Active Directory domain.
+#### 3. Configure Windows Server-2022 VM:
+  - Add Active Directory service.
+  - Promote to Domain Controller.
+#### 4. Join Windows 11 VM to Active Directory domain.
 
 
+---
 
 ### Skills Learned
-[Bullet Points - Remove this afterwards]
+- How to propery allocate hardware resources when setting up a virtual machine.
+- Downloading, installing, and configuration of Windows 11.
+- Downloading, installing, and configuration of Windows Server-2022 for use as an Active Directory Domain Controller.
+- 
+- 
 
 
 
