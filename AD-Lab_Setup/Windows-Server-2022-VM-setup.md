@@ -8,11 +8,11 @@ This guide provides step-by-step instructions for downloading, creating, and set
 
 1. Visit the **Microsoft Evaluation Center Page** for [Windows Server 2022](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022).
 2. Under **Get started for free**, choose **Download the ISO** option.
-   > 📸 *Insert screenshot of the evaluation center showing ISO option*
+   > 📸 1
 3. Fill out the **Register for your free trial today** form, and then select **Download now**.
-   > 📸 *Insert screenshot of the registration form*
+   > 📸 2
 4. Choose the **64-bit edition** in your preferred language. The ISO file will be large (around 5-6GB), so allow time for the download.
-   > 📸 *Insert screenshot showing download confirmation*
+   > 📸 3
 
 ---
 
@@ -25,15 +25,15 @@ This guide provides step-by-step instructions for downloading, creating, and set
    - **ISO Image**: Browse to and select the downloaded Windows Server 2022 ISO.
    - Be sure to select **Skip Unattended Installation**.
    - Click **Next**
-   > 📸 *Insert screenshot of VirtualBox setup screen with ISO selected*
+   > 📸 4
 
 2. **Hardware Configuration**
 
    - **Base Memory**: Minimum 4GB; Recommended 8GB or more for better performance.
    - **Processors**: Minimum 2; Recommended 4.
    - Click **Next**
-   > 📸 *Insert screenshot of memory and CPU settings*
-
+   > 📸 5
+   
 3. **Virtual Hard Disk**
 
    - Choose **Create a Virtual Hard Disk Now**
