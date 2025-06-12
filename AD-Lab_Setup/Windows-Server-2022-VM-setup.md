@@ -35,7 +35,7 @@ This guide provides step-by-step instructions for downloading, creating, and set
 
    - **Base Memory**: Minimum 4GB; Recommended 8GB or more for better performance.
    - **Processors**: Minimum 2; Recommended 4.
-   - Click **Next**
+   - Click **Next**  
    ![5VBox-setup](https://github.com/user-attachments/assets/3fbbb6a2-e2db-4b37-bccc-1b6ba5bd9bc4)
 
    
@@ -43,15 +43,17 @@ This guide provides step-by-step instructions for downloading, creating, and set
 
    - Choose **Create a Virtual Hard Disk Now**
    - Default settings are fine: 50GB dynamically allocated (you can increase based on use case)
-   - Click **Next**
-   > 📸 6
+   - Click **Next**  
+   ![6VBox-setup](https://github.com/user-attachments/assets/f5daf426-d0b4-4b6c-b3a8-c78870f5be13)
+
 
 4. **Summary**
 
    - Double-check settings
    - Confirm that **Skip Unattended Install** is *true*
-   - Click **Finish**
-   > 📸 7
+   - Click **Finish**  
+   ![7VBox-setup](https://github.com/user-attachments/assets/7f0caf10-e14f-42ab-bec4-f181b8387286)
+
 
 ---
 
@@ -63,24 +65,29 @@ This guide provides step-by-step instructions for downloading, creating, and set
 
    - Select **Language**, **Time and Currency Format**, and **Keyboard**. Leave defaults unless needed.
    - Click **Next**
-   > 📸 8
+   ![8install](https://github.com/user-attachments/assets/12880674-3c7e-4eb7-83c0-f1fab0c4f733)
+
 
    - Click **Install now**
-   > 📸 9
+   ![9install](https://github.com/user-attachments/assets/5345e1e1-cbef-4b3d-848a-3f67e068ff0b)
+
 
 3. Select Operating System Edition
 
    - Choose **Windows Server 2022 Standard Evaluation (Desktop Experience)** so it installs with a GUI (important!).
    - Click **Next**
-   > 📸 10
+   ![10install](https://github.com/user-attachments/assets/53296080-bd7f-4892-a37b-33cf887876f0)
+
 
 4. Accept the license terms and click **Next**
-   > 📸 11
+   ![11install](https://github.com/user-attachments/assets/65392e75-8860-4cf6-9dff-bb12ad381412)
+
 
 5. Choose **Custom: Install Windows only (advanced)**
 
    - Select the virtual hard drive and click **Next**
-   > 📸 12
+   ![12install](https://github.com/user-attachments/assets/755b22fa-eac7-4f82-b6f7-b04dddc5ed9f)
+
 
 6. Installation will begin. This may take several minutes. Windows will restart multiple times.
 
@@ -91,10 +98,12 @@ This guide provides step-by-step instructions for downloading, creating, and set
 1. On first boot, you’ll be prompted to set a password for the built-in **Administrator** account.
 
    - Enter and confirm a strong password.
-   > 📸 13
+   ![13pswd](https://github.com/user-attachments/assets/cd6f0f21-599f-41ce-ab4a-757b31d63558)
+
 
 2. Press **Ctrl+Alt+Del** to log in, then enter the password you just set.
-   > 📸 14,15
+   ![15login](https://github.com/user-attachments/assets/985e0ec1-0c03-4953-b265-6f57f568ad05)
+
 
 ---
 
@@ -103,16 +112,20 @@ This guide provides step-by-step instructions for downloading, creating, and set
 1. Log in to your **Windows Server 2022** VM.
 
 2. Go to the **Devices** menu in the VirtualBox window and choose **Insert Guest Additions CD image…**
-   > 📸 16
+   ![16guest](https://github.com/user-attachments/assets/8cc2ed15-50c7-4e12-9009-798505d634c4)
+
 
 3. If Autorun doesn't trigger:
    - Open **File Explorer**
    - Navigate to **CD Drive**
    - Right-click **VBoxWindowsAdditions-amd64.exe** and choose **Run as administrator**
-   > 📸 17-19
+   ![18guest](https://github.com/user-attachments/assets/3adf7989-f095-416f-8521-f771d54f333b)
+   ![19guest](https://github.com/user-attachments/assets/0d7b2f89-cbf9-4bd3-a3ce-1e4b39d0924e)
+
 
 4. Follow the Guest Additions setup wizard. Keep all defaults.
-   > 📸 20,21
+   ![20guest](https://github.com/user-attachments/assets/25ea1a08-1b22-4a87-9312-7530fbd38a57)
+
 
 5. Once finished, reboot the VM.
 
@@ -122,7 +135,8 @@ This guide provides step-by-step instructions for downloading, creating, and set
 
    - In VirtualBox, go to **Machine > Take Snapshot**
    - Name it something like `WS2022-CleanInstall`
-   > 📸 22
+   ![22snap](https://github.com/user-attachments/assets/8741e08f-7438-4dce-b732-660cae2a7f60)
+
 
 ---
 
