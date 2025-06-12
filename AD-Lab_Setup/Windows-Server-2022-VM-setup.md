@@ -54,36 +54,30 @@ This guide provides step-by-step instructions for downloading, creating, and set
 
 1. Select the **Windows Server 2022 VM** and click the green **Start** arrow to boot.
 
-   - A window will appear with **Press any key to boot from CD or DVD...**
-   - Click inside the window and press any key.
-   > 📸 *Insert screenshot of "Press any key" prompt*
-
 2. Windows Server 2022 Setup
 
    - Select **Language**, **Time and Currency Format**, and **Keyboard**. Leave defaults unless needed.
    - Click **Next**
-   > 📸 *Insert screenshot of regional settings*
+   > 📸 8
 
-   - Click **Install Now**
-   > 📸 *Insert screenshot of Install Now screen*
+   - Click **Install now**
+   > 📸 9
 
 3. Select Operating System Edition
 
-   - Choose **Windows Server 2022 Standard (Desktop Experience)** so it installs with a GUI (important!).
+   - Choose **Windows Server 2022 Standard Evaluation (Desktop Experience)** so it installs with a GUI (important!).
    - Click **Next**
-   > 📸 *Insert screenshot showing OS edition options*
+   > 📸 10
 
 4. Accept the license terms and click **Next**
-   > 📸 *Insert screenshot of license agreement*
+   > 📸 11
 
 5. Choose **Custom: Install Windows only (advanced)**
 
    - Select the virtual hard drive and click **Next**
-   > 📸 *Insert screenshot of drive selection screen*
+   > 📸 12
 
 6. Installation will begin. This may take several minutes. Windows will restart multiple times.
-
-   > 📸 *Insert screenshot of installation progress*
 
 ---
 
