@@ -6,7 +6,7 @@ This guide walks you through installing the Active Directory Domain Services (AD
 
 ## Prerequisites
 
-- A clean, installed **Windows Server 2022** VM.  Visit 
+- A clean, installed **Windows Server 2022** VM.  Visit: [Windows-Server-2022-VM-setup](AD-Lab_Setup/Windows-Server-2022-VM-setup.md) if you have not installed Windows Server 2022.
 - An **Administrator** password already set
 - Internet access (optional, for updates)
 
