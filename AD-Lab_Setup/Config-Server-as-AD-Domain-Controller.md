@@ -82,14 +82,11 @@ This guide walks you through installing the Active Directory Domain Services (AD
 ---
 
 ## Step 5: Log into the Domain
-
-1. The server will automatically reboot after installation  
-2. At login screen, select **Other user**  
-3. Log in as:  
-   - **Username**: `lab\Administrator`  
-   - **Password**: (the one you originally set)
-
-    **📷 Screenshot placeholder**
+  
+1. At the login screen, you should be able to login as **Administrator** on the domain you just created.  
+   - Example: **LAB\Administrator**. Your's may differ, depending the the name you chose for your domain.
+   - Login using the password you chose for **Administrator**
+     image 20
 
 ---
 
