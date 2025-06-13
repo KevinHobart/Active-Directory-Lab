@@ -74,12 +74,14 @@ This guide walks you through installing the Active Directory Domain Services (AD
    image 17  
 7. Review options and click **Next**
    image 18
-8. Once the *Prerequisites Check* is done, you will see the green checkmark.  Ignore the yellow triangles.  Click **Install**
+8. Once the *Prerequisites Check* is done, you will see the green checkmark.  Ignore the yellow triangles.
+     - Click **Install**  
+     - The server will automatically reboot after installation
    image 19
 
 ---
 
-## Step 5: Restart and Log into the Domain
+## Step 5: Log into the Domain
 
 1. The server will automatically reboot after installation  
 2. At login screen, select **Other user**  
