@@ -15,7 +15,7 @@ This guide walks you through installing the Active Directory Domain Services (AD
 1. Start VirtualBox
 2. Select and **Start** the Windows Server 2022 VM
 3. Login with the **Administrator** password you created for this server
-4. **Server Manager** should automatically load and bring you to the Dashboard
+4. **Server Manager** should automatically start and bring you to the Dashboard
 
 ---
 
@@ -33,20 +33,26 @@ This guide walks you through installing the Active Directory Domain Services (AD
 
 ## Step 3: Install the AD DS Role
 
-1. Open **Server Manager**  
-2. Click **Manage** > **Add Roles and Features**  
-3. On the **Before You Begin** screen, click **Next**  
-4. Choose **Role-based or feature-based installation** > **Next**  
-5. Select your local server > **Next**  
-6. Under **Server Roles**, check **Active Directory Domain Services**  
-7. A dialog box will prompt you to add features. Click **Add Features**  
-8. Click **Next** on Features screen  
-9. Click **Next** on AD DS screen  
-10. Click **Install**
-
-    **📷 Screenshot placeholder**
-
-11. Wait for installation to complete.
+1. Open **Server Manager** if it hasn't started automatically
+   image 3
+3. Click **Manage** > **Add Roles and Features**  
+4. On the **Before You Begin** screen, click **Next**
+   image 4  
+6. Choose **Role-based or feature-based installation** > **Next**
+   image 5 
+8. Select your local server > **Next**
+9. image 6 
+10. Under **Server Roles**, check **Active Directory Domain Services**  
+11. A dialog box will prompt you to add features. Click **Add Features**, Click **Next**
+    images 7,8  
+13. Click **Next** on *Features screen*
+    image 9  
+15. Click **Next** on *Active Directory Domain Services screen*
+    image 10
+17. On the *Confirm installtion selection* screen, Select the **Restart the destination server automatically if required** box.
+18. Click **Install**
+    image 11
+20. Wait for installation to complete.
 
 ---
 
