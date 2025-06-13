@@ -114,43 +114,42 @@ Active Directory Certificate Services (AD CS) is used to create certification au
 One of which is authenticating users.
 
 1. Open **Server Manager** if it hasn't started automatically
+2. Click **Manage** > **Add Roles and Features**
    ![3installAD](https://github.com/user-attachments/assets/28ccf449-b689-4587-8900-eddb29d27300)
-
-2. Click **Manage** > **Add Roles and Features**  
-3. On the **Before You Begin** screen, click **Next**
+4. On the **Before You Begin** screen, click **Next**
    ![4installAD](https://github.com/user-attachments/assets/b22099f7-703a-4a08-b793-a8c82cc37894)
  
-4. Choose **Role-based or feature-based installation** > **Next**
+5. Choose **Role-based or feature-based installation** > **Next**
    ![5installAD](https://github.com/user-attachments/assets/37c10401-0909-478c-87b6-d057df300da3)
 
-5. Select your local server > **Next**
+6. Select your local server > **Next**
     ![6installAD](https://github.com/user-attachments/assets/01b19764-c016-44a6-b20b-c676511a090b)
 
-6. Under **Server Roles**, check **Active Directory Certificates Services**  
-7. A dialog box will prompt you to add features. Click **Add Features**, Click **Next**
+7. Under **Server Roles**, check **Active Directory Certificates Services**  
+8. A dialog box will prompt you to add features. Click **Add Features**, Click **Next**
     ![21ADCS](https://github.com/user-attachments/assets/aa517b1b-d663-49bc-b714-f20b1299f657)
     ![22ADCS](https://github.com/user-attachments/assets/36a70403-5489-4435-aeaf-404ee135f81d)
 
-8. Click **Next** on *Features screen*  
-9. Click **Next** on *Active Directory Certificate Services screen*
-10. On the *Confirm installtion selection* screen, Select the **Restart the destination server automatically if required** box.
-11. Click **Install**
+9. Click **Next** on *Features screen*  
+10. Click **Next** on *Active Directory Certificate Services screen*
+11. On the *Confirm installtion selection* screen, Select the **Restart the destination server automatically if required** box.
+12. Click **Install**
     ![23ADCS](https://github.com/user-attachments/assets/f146c83a-1322-4522-b410-6e3767c43cf6)
 
-12. Wait for installation to complete.
-13. Once the AD CS role is installed, select **Configure Active Directory Certificate Services on the destination server** in the box under *additional steps are required to configure Active Directory Certificate Services on the destination server*
+13. Wait for installation to complete.
+14. Once the AD CS role is installed, select **Configure Active Directory Certificate Services on the destination server** in the box under *additional steps are required to configure Active Directory Certificate Services on the destination server*
     ![24ADCS](https://github.com/user-attachments/assets/e8c136ac-2962-4d8b-be8e-ae0b810850ed)
 
-14. Click **Next** on *Credentials* Screen
-15. Check **Certification Authority** box on *Role Services* Screen
+15. Click **Next** on *Credentials* Screen
+16. Check **Certification Authority** box on *Role Services* Screen
     - Click **Next**
     ![25ADCS](https://github.com/user-attachments/assets/d2bc7dbc-e923-4f00-9259-f2451951a0af)
 
-16. Click **Next** on all other screens (defaults)
-17. Click **Configure** on last screen
+17. Click **Next** on all other screens (defaults)
+18. Click **Configure** on last screen
     ![26ADCS](https://github.com/user-attachments/assets/bccc4d71-2f34-44d5-ad4f-5f658fb41b6e)
 
-18. Close all setup windows to get back to the Server Manager Dashboard
+19. Close all setup windows to get back to the Server Manager Dashboard
 
 ---
 
