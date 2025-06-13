@@ -107,7 +107,7 @@ One of which is authenticating users.
 8. A dialog box will prompt you to add features. Click **Add Features**, Click **Next**
     images 21, 22 
 9. Click **Next** on *Features screen*  
-10. Click **Next** on *Active Directory Domain Services screen*
+10. Click **Next** on *Active Directory Certificate Services screen*
 11. On the *Confirm installtion selection* screen, Select the **Restart the destination server automatically if required** box.
 12. Click **Install**
     image 23
@@ -121,7 +121,7 @@ One of which is authenticating users.
 17. Click **Next** on all other screens (defaults)
 18. Click **Configure** on last screen
     image 26
-
+19. Close all setup windows to get back to the Server Manager Dashboard
 ---
 
 ## Step 6: Verify AD DS and DNS Functionality
