@@ -122,20 +122,19 @@ One of which is authenticating users.
 18. Click **Configure** on last screen
     image 26
 19. Close all setup windows to get back to the Server Manager Dashboard
+
 ---
 
 ## Step 6: Verify AD DS and DNS Functionality
 
-1. Open **Server Manager**  
+1. Open **Server Manager** (if not already open) 
 2. Click **Tools** > **Active Directory Users and Computers**  
-3. Confirm your domain (e.g., `lab.local`) is listed  
-4. Explore built-in OUs (Organizational Units)
+3. Confirm your domain (e.g., `LAB.local`) is listed  
 
 5. Open **DNS** from Tools and check:
-   - Forward Lookup Zones > `lab.local`
+   - Forward Lookup Zones > `LAB.local`
    - _msdcs subdomain present
-
-    **📷 Screenshot placeholder**
+   image 27
 
 ---
 
