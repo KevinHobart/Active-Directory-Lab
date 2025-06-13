@@ -48,22 +48,22 @@ This guide walks you through installing the Active Directory Domain Services (AD
 5. Select your local server > **Next**
     ![6installAD](https://github.com/user-attachments/assets/93b0ca39-8980-49c8-9109-a0ed6f579a03)
 
-7. Under **Server Roles**, check **Active Directory Domain Services**  
-8. A dialog box will prompt you to add features. Click **Add Features**, Click **Next**
+6. Under **Server Roles**, check **Active Directory Domain Services**  
+7. A dialog box will prompt you to add features. Click **Add Features**, Click **Next**
       ![7installAD](https://github.com/user-attachments/assets/a4a231fd-2c7e-43b7-a1f5-a5f301a83edd)
       ![8installAD](https://github.com/user-attachments/assets/742e1260-5b07-4719-b25d-4f568ebd7149)
 
-9. Click **Next** on *Features screen*
+8. Click **Next** on *Features screen*
       ![9installAD](https://github.com/user-attachments/assets/1e9eb464-beea-47b9-8887-c51e8c8512e7)
  
-10. Click **Next** on *Active Directory Domain Services screen*
+9. Click **Next** on *Active Directory Domain Services screen*
     ![10installAD](https://github.com/user-attachments/assets/c8c3509e-bb4e-4147-bc25-cdca94ab3b00)
 
-11. On the *Confirm installtion selection* screen, Select the **Restart the destination server automatically if required** box.
-12. Click **Install**
+10. On the *Confirm installtion selection* screen, Select the **Restart the destination server automatically if required** box.
+11. Click **Install**
     ![11installAD](https://github.com/user-attachments/assets/752e78e0-2a22-48ac-a88e-3c0b4ef3ab93)
 
-13. Wait for installation to complete.
+12. Wait for installation to complete.
 
 ---
 
@@ -85,13 +85,13 @@ This guide walks you through installing the Active Directory Domain Services (AD
    ![15promote](https://github.com/user-attachments/assets/7a6171ce-73b8-483f-a0c6-9be18efad343)
    ![16promote](https://github.com/user-attachments/assets/51b20162-1709-4dab-85ed-62cd7fbf2775)
 
-6. Click **Next** through Paths screen
+5. Click **Next** through Paths screen
    ![17promote](https://github.com/user-attachments/assets/b74f3f6d-39ae-41d7-9bef-9658798b7590)
 
-7. Review options and click **Next**
+6. Review options and click **Next**
    ![18promote](https://github.com/user-attachments/assets/3140e5de-8a14-409d-9bb5-518940d528cb)
 
-8. Once the *Prerequisites Check* is done, you will see the green checkmark.  Ignore the yellow triangles.
+7. Once the *Prerequisites Check* is done, you will see the green checkmark.  Ignore the yellow triangles.
      - Click **Install**  
      - The server will automatically reboot after installation
    ![19promote](https://github.com/user-attachments/assets/54e4a565-1582-4062-bb18-dfc652febb22)
@@ -126,31 +126,31 @@ One of which is authenticating users.
 5. Select your local server > **Next**
     ![6installAD](https://github.com/user-attachments/assets/01b19764-c016-44a6-b20b-c676511a090b)
 
-7. Under **Server Roles**, check **Active Directory Certificates Services**  
-8. A dialog box will prompt you to add features. Click **Add Features**, Click **Next**
+6. Under **Server Roles**, check **Active Directory Certificates Services**  
+7. A dialog box will prompt you to add features. Click **Add Features**, Click **Next**
     ![21ADCS](https://github.com/user-attachments/assets/aa517b1b-d663-49bc-b714-f20b1299f657)
     ![22ADCS](https://github.com/user-attachments/assets/36a70403-5489-4435-aeaf-404ee135f81d)
 
-9. Click **Next** on *Features screen*  
-10. Click **Next** on *Active Directory Certificate Services screen*
-11. On the *Confirm installtion selection* screen, Select the **Restart the destination server automatically if required** box.
-12. Click **Install**
+8. Click **Next** on *Features screen*  
+9. Click **Next** on *Active Directory Certificate Services screen*
+10. On the *Confirm installtion selection* screen, Select the **Restart the destination server automatically if required** box.
+11. Click **Install**
     ![23ADCS](https://github.com/user-attachments/assets/f146c83a-1322-4522-b410-6e3767c43cf6)
 
-13. Wait for installation to complete.
-14. Once the AD CS role is installed, select **Configure Active Directory Certificate Services on the destination server** in the box under *additional steps are required to configure Active Directory Certificate Services on the destination server*
+12. Wait for installation to complete.
+13. Once the AD CS role is installed, select **Configure Active Directory Certificate Services on the destination server** in the box under *additional steps are required to configure Active Directory Certificate Services on the destination server*
     ![24ADCS](https://github.com/user-attachments/assets/e8c136ac-2962-4d8b-be8e-ae0b810850ed)
 
-15. Click **Next** on *Credentials* Screen
-16. Check **Certification Authority** box on *Role Services* Screen
+14. Click **Next** on *Credentials* Screen
+15. Check **Certification Authority** box on *Role Services* Screen
     - Click **Next**
     ![25ADCS](https://github.com/user-attachments/assets/d2bc7dbc-e923-4f00-9259-f2451951a0af)
 
-17. Click **Next** on all other screens (defaults)
-18. Click **Configure** on last screen
+16. Click **Next** on all other screens (defaults)
+17. Click **Configure** on last screen
     ![26ADCS](https://github.com/user-attachments/assets/bccc4d71-2f34-44d5-ad4f-5f658fb41b6e)
 
-19. Close all setup windows to get back to the Server Manager Dashboard
+18. Close all setup windows to get back to the Server Manager Dashboard
 
 ---
 
@@ -160,7 +160,7 @@ One of which is authenticating users.
 2. Click **Tools** > **Active Directory Users and Computers**  
 3. Confirm your domain (e.g., `LAB.local`) is listed  
 
-5. Open **DNS** from Tools and check:
+4. Open **DNS** from Tools and check:
    - Forward Lookup Zones > `LAB.local`
    - _msdcs subdomain present
    ![27DNS](https://github.com/user-attachments/assets/641179b9-51ca-42c6-b163-3e175966ccc2)
