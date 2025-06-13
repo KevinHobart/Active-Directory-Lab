@@ -81,12 +81,46 @@ This guide walks you through installing the Active Directory Domain Services (AD
 
 ---
 
-## Step 5: Log into the Domain
+## Step 5: Log into the Domain 
   
 1. At the login screen, you should be able to login as **Administrator** on the domain you just created.  
    - Example: **LAB\Administrator**. Your's may differ, depending the the name you chose for your domain.
    - Login using the password you chose for **Administrator**
      image 20
+
+---
+
+## Step 6: Install the AD Certificate Services Role  
+Active Directory Certificate Services (AD CS) is used to create certification authorities and related role services that allow you to issue and manage certificates used in a variety of applications.  
+One of which is authenticating users.
+
+1. Open **Server Manager** if it hasn't started automatically
+   image 3
+2. Click **Manage** > **Add Roles and Features**  
+3. On the **Before You Begin** screen, click **Next**
+   image 4  
+4. Choose **Role-based or feature-based installation** > **Next**
+   image 5 
+5. Select your local server > **Next**
+6. image 6 
+7. Under **Server Roles**, check **Active Directory Certificates Services**  
+8. A dialog box will prompt you to add features. Click **Add Features**, Click **Next**
+    images 21, 22 
+9. Click **Next** on *Features screen*  
+10. Click **Next** on *Active Directory Domain Services screen*
+11. On the *Confirm installtion selection* screen, Select the **Restart the destination server automatically if required** box.
+12. Click **Install**
+    image 23
+13. Wait for installation to complete.
+14. Once the AD CS role is installed, select **Configure Active Directory Certificate Services on the destination server** in the box under *additional steps are required to configure Active Directory Certificate Services on the destination server*
+    image 24
+15. Click **Next** on *Credentials* Screen
+16. Check **Certification Authority** box on *Role Services* Screen
+    - Click **Next**
+    image 25
+17. Click **Next** on all other screens (defaults)
+18. Click **Configure** on last screen
+    image 26
 
 ---
 
