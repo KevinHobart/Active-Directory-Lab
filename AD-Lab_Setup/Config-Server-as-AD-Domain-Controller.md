@@ -36,34 +36,33 @@ This guide walks you through installing the Active Directory Domain Services (AD
 ## Step 3: Install the AD DS Role
 
 1. Open **Server Manager** if it hasn't started automatically
+2. Click **Manage** > **Add Roles and Features**
    ![3installAD](https://github.com/user-attachments/assets/0d5486ef-80df-40e8-95d5-feab09eb620e)
-
-2. Click **Manage** > **Add Roles and Features**  
-3. On the **Before You Begin** screen, click **Next**
+4. On the **Before You Begin** screen, click **Next**
    ![4installAD](https://github.com/user-attachments/assets/b094760f-bef4-448e-9e43-64cd601976f7)
 
-4. Choose **Role-based or feature-based installation** > **Next**
+5. Choose **Role-based or feature-based installation** > **Next**
     ![5installAD](https://github.com/user-attachments/assets/f15866a2-75b3-4eda-ab4a-85d72b1a1297)
 
-5. Select your local server > **Next**
+6. Select your local server > **Next**
     ![6installAD](https://github.com/user-attachments/assets/93b0ca39-8980-49c8-9109-a0ed6f579a03)
 
-6. Under **Server Roles**, check **Active Directory Domain Services**  
-7. A dialog box will prompt you to add features. Click **Add Features**, Click **Next**
+7. Under **Server Roles**, check **Active Directory Domain Services**  
+8. A dialog box will prompt you to add features. Click **Add Features**, Click **Next**
       ![7installAD](https://github.com/user-attachments/assets/a4a231fd-2c7e-43b7-a1f5-a5f301a83edd)
       ![8installAD](https://github.com/user-attachments/assets/742e1260-5b07-4719-b25d-4f568ebd7149)
 
-8. Click **Next** on *Features screen*
+9. Click **Next** on *Features screen*
       ![9installAD](https://github.com/user-attachments/assets/1e9eb464-beea-47b9-8887-c51e8c8512e7)
  
-9. Click **Next** on *Active Directory Domain Services screen*
+10. Click **Next** on *Active Directory Domain Services screen*
     ![10installAD](https://github.com/user-attachments/assets/c8c3509e-bb4e-4147-bc25-cdca94ab3b00)
 
-10. On the *Confirm installtion selection* screen, Select the **Restart the destination server automatically if required** box.
-11. Click **Install**
+11. On the *Confirm installtion selection* screen, Select the **Restart the destination server automatically if required** box.
+12. Click **Install**
     ![11installAD](https://github.com/user-attachments/assets/752e78e0-2a22-48ac-a88e-3c0b4ef3ab93)
 
-12. Wait for installation to complete.
+13. Wait for installation to complete.
 
 ---
 
@@ -81,7 +80,7 @@ This guide walks you through installing the Active Directory Domain Services (AD
 3. Set Directory Services Restore Mode (DSRM) **Password**, Click **Next**
    ![14promote](https://github.com/user-attachments/assets/ae6b18ba-69f2-47c8-987c-dacfbe0adc6e)
 
-4. Click **Next** through DNS Options and NetBIOS name screens
+4. Click **Next** through *DNS Options* and *NetBIOS name* screens
    ![15promote](https://github.com/user-attachments/assets/7a6171ce-73b8-483f-a0c6-9be18efad343)
    ![16promote](https://github.com/user-attachments/assets/51b20162-1709-4dab-85ed-62cd7fbf2775)
 
