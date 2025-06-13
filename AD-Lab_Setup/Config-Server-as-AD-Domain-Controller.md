@@ -21,7 +21,7 @@ This guide walks you through installing the Active Directory Domain Services (AD
 
 ## Step 2: Rename the Computer
 
-1. Open **Server Manager**  
+1. In the search box, type **View your PC name**  
 2. Click **Local Server** on the left  
 3. Next to **Computer Name**, click the current name to open **System Properties**  
 4. Click **Change…**, rename your server (e.g., `DC1`), then click OK  
