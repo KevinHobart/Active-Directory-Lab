@@ -165,22 +165,9 @@ One of which is authenticating users.
    - _msdcs subdomain present
    ![27DNS](https://github.com/user-attachments/assets/641179b9-51ca-42c6-b163-3e175966ccc2)
 
+## Step 7: Take a snapshot of the Windows Server 2022 VM
 
----
-
-## Optional: Create an Organizational Unit (OU) and a User
-
-1. Open **Active Directory Users and Computers**  
-2. Right-click the domain > **New > Organizational Unit**  
-   - Name it: `TestOU`  
-3. Right-click `TestOU` > **New > User**  
-   - **First name**: John  
-   - **Last name**: Doe  
-   - **Username**: jdoe  
-   - Set a password and deselect “User must change password at next logon”  
-   - Click **Finish**
-
-    **📷 Screenshot placeholder**
+Be sure to take a **snapshot** of the VM at this point.  If you make changes, or break something going forward, you can always revert back to a previous snapshot.
 
 ---
 
@@ -188,6 +175,6 @@ One of which is authenticating users.
 
 - Restart your server after domain promotion and DNS changes  
 - Snapshots are useful before/after making major changes  
-- Always use strong passwords for administrative users  
-- Practice creating GPOs, adding clients, or configuring DHCP next!
+
+
 
