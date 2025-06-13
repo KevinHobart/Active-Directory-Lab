@@ -58,17 +58,24 @@ This guide walks you through installing the Active Directory Domain Services (AD
 
 ## Step 4: Promote Server to a Domain Controller
 
-1. Once the AD DS role is installed, click the **flag icon** in Server Manager > **Promote this server to a domain controller**
+1. Once the AD DS role is installed, select **Promote this server to a domain controller** in the box under *additional steps are required to make this machine a domain controller*
+   image 12
 
-2. Choose **Add a new forest**  
-   - **Root domain name**: e.g., `lab.local`
-
-3. Set Directory Services Restore Mode (DSRM) password  
-4. Click **Next** through DNS Options and NetBIOS name  
-5. Click **Next** through Paths  
-6. Review options and click **Install**
-
-    **📷 Screenshot placeholder**
+2. Select **Add a new forest**  
+   - **Root domain name**: LAB.local
+   - Note: you can name this whatever you like.  For example: ADLAB.local, ADServer.local, MyCompany.local, MyCompany.com, etc.
+   - Click **Next**
+   image 13
+3. Set Directory Services Restore Mode (DSRM) **Password**, Click **Next**
+   image 14 
+4. Click **Next** through DNS Options and NetBIOS name screens
+5. image 15, 16
+6. Click **Next** through Paths screen
+   image 17  
+7. Review options and click **Next**
+   image 18
+8. Once the *Prerequisites Check* is done, you will see the green checkmark.  Ignore the yellow triangles.  Click **Install**
+   image 19
 
 ---
 
