@@ -35,24 +35,24 @@ This guide walks you through installing the Active Directory Domain Services (AD
 
 1. Open **Server Manager** if it hasn't started automatically
    image 3
-3. Click **Manage** > **Add Roles and Features**  
-4. On the **Before You Begin** screen, click **Next**
+2. Click **Manage** > **Add Roles and Features**  
+3. On the **Before You Begin** screen, click **Next**
    image 4  
-6. Choose **Role-based or feature-based installation** > **Next**
+4. Choose **Role-based or feature-based installation** > **Next**
    image 5 
-8. Select your local server > **Next**
-9. image 6 
-10. Under **Server Roles**, check **Active Directory Domain Services**  
-11. A dialog box will prompt you to add features. Click **Add Features**, Click **Next**
+5. Select your local server > **Next**
+6. image 6 
+7. Under **Server Roles**, check **Active Directory Domain Services**  
+8. A dialog box will prompt you to add features. Click **Add Features**, Click **Next**
     images 7,8  
-13. Click **Next** on *Features screen*
+9. Click **Next** on *Features screen*
     image 9  
-15. Click **Next** on *Active Directory Domain Services screen*
+10. Click **Next** on *Active Directory Domain Services screen*
     image 10
-17. On the *Confirm installtion selection* screen, Select the **Restart the destination server automatically if required** box.
-18. Click **Install**
+11. On the *Confirm installtion selection* screen, Select the **Restart the destination server automatically if required** box.
+12. Click **Install**
     image 11
-20. Wait for installation to complete.
+13. Wait for installation to complete.
 
 ---
 
