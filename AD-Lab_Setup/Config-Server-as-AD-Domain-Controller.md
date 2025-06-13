@@ -10,9 +10,12 @@ This guide walks you through installing the Active Directory Domain Services (AD
 - An **Administrator** password already set
 - Internet access (for updates)
 
----
+## Step 1:
 
-
+1. Start VirtualBox
+2. Select and **Start** the Windows Server 2022 VM
+3. Login with the **Administrator** password you created for this server
+4. **Server Manager** should automatically load and bring you to the Dashboard
 
 ---
 
