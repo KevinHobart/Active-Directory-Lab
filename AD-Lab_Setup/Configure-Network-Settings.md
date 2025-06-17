@@ -134,7 +134,7 @@ For Active Directory to function properly, your server and client need static IP
    - **IP Address**: `10.0.2.x`
    - **Subnet Mask**: `255.255.255.0`
    - **Default Gateway**: `10.0.2.x`
-   - **Preferred DNS Server**: IP address of the **server** (points to the server)
+   - **Preferred DNS Server**: Here you will enter the `IP address` of the **server** (points to the server)
 11. Click **OK**, then **Close**.
 
 📸 *Screenshot: TCP/IPv4 settings with static IP for client*
