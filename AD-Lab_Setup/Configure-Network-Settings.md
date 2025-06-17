@@ -72,8 +72,10 @@ This tutorial sets up a **NAT Network** in VirtualBox to allow both your **Windo
 ---
 
 ## Step 5: Configure Static IP Addresses and DNS Settings
+For Active Directory to function properly, your server and client need static IP addresses, and correct DNS configuration. We'll assign a static IP to the **Windows Server 2022** VM and have it point to itself for DNS. Then, we’ll set a static IP for the **Windows 11** VM and configure it to use the server's IP as its DNS.
 
-### On the Server:
+
+### Configure the Server (Windows Server 2022)
 
 1. Open **Command Prompt**.
 2. Type:
@@ -87,11 +89,24 @@ This tutorial sets up a **NAT Network** in VirtualBox to allow both your **Windo
    ping google.com
    ```
 
-📸 *Screenshot suggestion:* Show successful ping results to the internet.
+1. Log into the Server as **Administrator**.
+2. Open **Control Panel** → **Network and Sharing Center** → **Change adapter settings**.
+3. Right-click the **Internal Network adapter** and choose **Properties**.
+4. Select **Internet Protocol Version 4 (TCP/IPv4)** and click **Properties**.
+5. Set the following:
+   - Replace `x` with actual server IP and Default Gateway.
+   - **IP Address**: `10.0.2.x`
+   - **Subnet Mask**: `255.255.255.0`
+   - **Default Gateway**: `10.0.2.x`
+   - **Preferred DNS Server**: `127.0.0.1` (points to itself)
+7. Click **OK**, then **Close**.
+8. Run ```ipconfig``` to verify.
+
+📸 *Screenshot: TCP/IPv4 settings with static IP for server*
 
 ---
 
-### On the Client:
+### Configure the Client (Windows 11 VM)
 
 1. Log in to the **Windows 11 Client**.
 2. Open **Command Prompt**.
@@ -108,6 +123,21 @@ This tutorial sets up a **NAT Network** in VirtualBox to allow both your **Windo
    (Replace `X` with the Server's actual IP)
 
 📸 *Screenshot suggestion:* Show successful ping between Client and Server.
+
+1. Log into the Windows 11 VM.
+2. Open **Control Panel** → **Network and Sharing Center** → **Change adapter settings**.
+3. Right-click the **Internal Network adapter** and choose **Properties**.
+4. Select **Internet Protocol Version 4 (TCP/IPv4)** and click **Properties**.
+5. Set the following:
+   - Replace `x` with actual Windows 11 IP and Default Gateway.
+   - **IP Address**: `10.0.2.x`
+   - **Subnet Mask**: `255.255.255.0`
+   - **Default Gateway**: `10.0.2.x`
+   - **Preferred DNS Server**: IP address of the **server** (points to the server)
+7. Click **OK**, then **Close**.
+
+📸 *Screenshot: TCP/IPv4 settings with static IP for client*
+
 
 ---
 
