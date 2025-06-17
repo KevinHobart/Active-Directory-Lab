@@ -99,8 +99,9 @@ This tutorial sets up a **NAT Network** in VirtualBox to allow both your **Windo
    ```
    ipconfig
    ```
-   - Confirm it's on the same NAT subnet.
-4. Ping the Server’s IP address:
+   - Confirm it's on the same NAT subnet (e.g., `10.0.2.x`).
+4. Make note of the Subnet Mask (`255.255.255.0`), and the Default Gateway (e.g., `10.0.2.1`).
+5. Ping the Server’s IP address:
    ```
    ping 10.0.2.X
    ```
