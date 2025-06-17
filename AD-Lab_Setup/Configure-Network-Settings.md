@@ -67,7 +67,7 @@ This tutorial sets up a **NAT Network** in VirtualBox to allow both your **Windo
 ## Step 4: Boot the VMs and Verify Connectivity
 
 1. Start both the **Server** and **Client** VMs.
-2. Once both VMs are running, log in to each.
+2. Once both VMs are running, log in to each.  On the server, log in with the Administrator password.  On the client, log in with the password you created for the Windows 11 VM.
 
 ---
 
