@@ -13,7 +13,119 @@ This is a lengthy tutorial, so I won't include screenshots for every step, but I
 This ensures you have a reset point in case you run into problems.
 
 ---
+---
 
+# NAT Network Setup in VirtualBox
+
+This tutorial sets up a **NAT Network** in VirtualBox to allow both your **Windows Server 2022 Domain Controller** and your **Windows 11 Client VM** to communicate with each other **and access the internet**. This setup is beginner-friendly and ideal for basic Active Directory labs.
+
+---
+
+## Step 1: Create a NAT Network in VirtualBox
+
+1. Open **VirtualBox**.
+2. Go to the **File** menu and select **Tools > Network Manager**.
+3. Click on the **NAT Networks** tab.
+4. Click the **plus (+)** icon to create a new NAT Network.
+5. Make sure the new NAT network is:
+   - **Enabled**
+   - Has **DHCP Server** enabled
+   - Uses a subnet like `10.0.2.0/24` (default is fine)
+
+📸 *Screenshot suggestion:* Show the NAT Network settings window with a new network configured.
+
+---
+
+## Step 2: Configure the Server VM to Use the NAT Network
+
+1. In VirtualBox Manager, select your **Windows Server 2022** VM and click **Settings**.
+2. Go to the **Network** section.
+3. **Adapter 1**:
+   - Check **Enable Network Adapter**
+   - **Attached to:** NAT Network
+   - **Name:** Choose the NAT Network you just created
+4. Click **OK**.
+
+📸 *Screenshot suggestion:* Show the Server VM's Adapter 1 configuration window.
+
+---
+
+## Step 3: Configure the Windows 11 Client VM to Use the Same NAT Network
+
+1. In VirtualBox Manager, select your **Windows 11 Client** VM and click **Settings**.
+2. Go to the **Network** section.
+3. **Adapter 1**:
+   - Check **Enable Network Adapter**
+   - **Attached to:** NAT Network
+   - **Name:** Choose the same NAT Network used by the Server
+4. Click **OK**.
+
+📸 *Screenshot suggestion:* Show the Windows 11 VM's Adapter 1 configuration window.
+
+---
+
+## Step 4: Boot the VMs and Verify Connectivity
+
+1. Start both the **Server** and **Client** VMs.
+2. Once both VMs are running, log in to each.
+
+---
+
+## Step 5: Verify Network Connectivity
+
+### On the Server:
+
+1. Open **Command Prompt**.
+2. Type:
+   ```
+   ipconfig
+   ```
+3. Confirm that the Server has an IP address in the NAT Network range (e.g., `10.0.2.x`).
+4. Ping the internet:
+   ```
+   ping google.com
+   ```
+
+📸 *Screenshot suggestion:* Show successful ping results to the internet.
+
+---
+
+### On the Client:
+
+1. Log in to the **Windows 11 Client**.
+2. Open **Command Prompt**.
+3. Type:
+   ```
+   ipconfig
+   ```
+   - Confirm it's on the same NAT subnet.
+4. Ping the Server’s IP address:
+   ```
+   ping 10.0.2.X
+   ```
+   (Replace `X` with the Server's actual IP)
+
+📸 *Screenshot suggestion:* Show successful ping between Client and Server.
+
+---
+
+## ✅ Summary
+
+- Both VMs are connected to a shared NAT Network.
+- Both VMs have internet access.
+- Both VMs can communicate with each other.
+- This setup is ideal for:
+  - AD setup
+  - Group Policy
+  - User/Computer Management
+  - Remote Desktop Practice
+  - General administration labs
+
+---
+---
+---
+
+  
 ## Step 1: Set the VirtualBox Network Adapter Type
 
 You’ll need to configure two network adapters for your **Windows Server 2022** VM:
