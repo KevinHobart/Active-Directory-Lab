@@ -27,8 +27,8 @@ This tutorial sets up a **NAT Network** in VirtualBox to allow both your **Windo
 2. Go to the **File** menu and select **Tools > Network Manager**.
 3. Click on the **NAT Networks** tab.
 4. Click the **plus (+)** icon to create a new NAT Network.
-5. Make sure the new NAT network is:
-   - **Enabled**
+5. Rename the NAT Network.  Example: ADNetwork, ADNetLab, ADNatNet...
+6. Make sure the new NAT network:
    - Has **DHCP Server** enabled
    - Uses a subnet like `10.0.2.0/24` (default is fine)
 
