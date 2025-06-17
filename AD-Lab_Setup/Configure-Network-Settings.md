@@ -124,11 +124,12 @@ For Active Directory to function properly, your server and client need static IP
 3. Right-click the **Internal Network adapter** and choose **Properties**.
 4. Select **Internet Protocol Version 4 (TCP/IPv4)** and click **Properties**.
 5. Set the following:
-   - **IP Address**: `192.168.10.1`
+   - **IP Address**: `10.0.2.x`
    - **Subnet Mask**: `255.255.255.0`
-   - **Default Gateway**: Leave blank (unless routing to external networks)
-   - **Preferred DNS Server**: `192.168.10.1` (points to itself)
+   - **Default Gateway**: `10.0.2.x`
+   - **Preferred DNS Server**: `127.0.0.1` (points to itself)
 6. Click **OK**, then **Close**.
+7. Run ```ipconfig``` to verify.
 
 📸 *Screenshot: TCP/IPv4 settings with static IP for server*
 
