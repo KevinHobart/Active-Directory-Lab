@@ -9,6 +9,8 @@ This Configuration must be done **Before** joining the Windows 11 client to the 
   
 I would recommend that the initial network configuration be *NAT Network*.  I will put the *NAT Network* configuration tutorial first, followed by the *Internal Network* configuration tutorial.  
 This is a lengthy tutorial, so I won't include screenshots for every step, but I'll try to include them when I think it might be helpful.  
+**IMPORTANT:** I would highly recommend taking a snapshots of your VMs while configuring the network.  Take a snapshot of both VMs after you have done the *NAT Network* configuration, but before joining the Windows 11 VM to the domain.  
+This ensures you have a reset point in case you run into problems.
 
 ---
 
