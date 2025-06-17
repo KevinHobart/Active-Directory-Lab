@@ -3,9 +3,12 @@
 
 This guide helps you configure network settings for a Windows Server 2022 VM (already set up as a Domain Controller) and prepare for a Windows 11 client to join the domain.  
 This Configuration must be done **Before** joining the Windows 11 client to the domain.  
-**NOTE:**  I am including **two** options for network configurations.  The first will be a simple, more straight-forward network configuration utilizing a *NAT Network* in which both VMs can access the internet and can interact with the host machine.  This will work great for initial setup and performing various administration-type labs.  
-The second network configuration will more closely resemble a network found in a real-world enterprise setting.  The server (Domain Controller) will have access to the internet, and will route traffic from the Internal Network (Client machines) to the NAT adapter to provide internet access for the Windows 11 VM (Client). This option is a more in-depth setup, but is a more realistic example of how a network might look in an enterprise setting.  
-I would recommend that the initial network configuration be *NAT Network*.
+**NOTE:**  I am including **two** options for network configurations.  
+- The first will be a simple, more straight-forward network configuration utilizing a *NAT Network* in which both VMs can access the internet and can interact with the host machine.  This will work great for initial setup and performing various administration-type labs.  
+- The second network configuration will more closely resemble a network found in a real-world enterprise setting.  The server (Domain Controller) will have access to the internet, and will route traffic from the Internal Network (Client machines) to the NAT adapter to provide internet access for the Windows 11 VM (Client). This option is a more in-depth setup, but is a more realistic example of how a network might look in an enterprise setting.
+  
+I would recommend that the initial network configuration be *NAT Network*.  I will put the *NAT Network* configuration tutorial first, followed by the *Internal Network* configuration tutorial.  
+This is a lengthy tutorial, so I won't include screenshots for every step, but I'll try to include them when I think it might be helpful.  
 
 ---
 
