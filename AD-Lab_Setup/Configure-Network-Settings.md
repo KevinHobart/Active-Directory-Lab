@@ -32,7 +32,7 @@ This tutorial sets up a **NAT Network** in VirtualBox to allow both your **Windo
    - Has **DHCP Server** enabled
    - Uses a subnet like `10.0.2.0/24` (default is fine)
 
-📸 *Screenshot suggestion:* Show the NAT Network settings window with a new network configured.
+📸 *Screenshot suggestion: 1
 
 ---
 
@@ -46,7 +46,7 @@ This tutorial sets up a **NAT Network** in VirtualBox to allow both your **Windo
    - **Name:** Choose the NAT Network you just created
 4. Click **OK**.
 
-📸 *Screenshot suggestion:* Show the Server VM's Adapter 1 configuration window.
+📸 *Screenshot suggestion:* 2
 
 ---
 
@@ -60,14 +60,10 @@ This tutorial sets up a **NAT Network** in VirtualBox to allow both your **Windo
    - **Name:** Choose the same NAT Network used by the Server
 4. Click **OK**.
 
-📸 *Screenshot suggestion:* Show the Windows 11 VM's Adapter 1 configuration window.
+📸 *Screenshot suggestion:* 3
 
----
-
-## Step 4: Boot the VMs and Verify Connectivity
-
-1. Start both the **Server** and **Client** VMs.
-2. Once both VMs are running, log in to each.  On the server, log in with the Administrator password.  On the client, log in with the password you created for the Windows 11 VM.
+5. Start both the **Server** and **Client** VMs.
+6. Once both VMs are running, log in to each.  On the server, log in with the Administrator password.  On the client, log in with the password you created for the Windows 11 VM.
 
 ---
 
