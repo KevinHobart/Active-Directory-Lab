@@ -17,7 +17,7 @@ This ensures you have a reset point in case you run into problems.
 
 # NAT Network Setup 
 
-This tutorial sets up a **NAT Network** in VirtualBox to allow both your **Windows Server 2022 Domain Controller** and your **Windows 11 Client VM** to communicate with each other **and access the internet**. This setup is beginner-friendly and ideal for basic Active Directory labs.
+This tutorial sets up a **NAT Network** in VirtualBox to allow both your **Windows Server 2022 Domain Controller** and your **Windows 11 Client VM** to communicate with each other **and access the internet**. This setup is beginner-friendly and ideal for basic Active Directory labs. 
 
 ---
 
