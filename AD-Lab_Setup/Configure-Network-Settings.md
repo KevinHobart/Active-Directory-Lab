@@ -79,6 +79,7 @@ For Active Directory to function properly, your server and client need static IP
    ```
    ipconfig
    ```
+   Image 4
 3. Confirm that the Server has an IP address in the NAT Network range (e.g., `10.0.2.x`).
 4. Also, make note of the Subnet Mask (`255.255.255.0`), and the Default Gateway (e.g., `10.0.2.1`).
 5. Ping the internet to verify connectivity:
