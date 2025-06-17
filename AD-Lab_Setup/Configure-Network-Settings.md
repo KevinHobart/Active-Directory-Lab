@@ -63,7 +63,7 @@ This tutorial sets up a **NAT Network** in VirtualBox to allow both your **Windo
 📸 *Screenshot suggestion:* 3
 
 5. Start both the **Server** and **Client** VMs.
-6. Once both VMs are running, log in to each.  On the server, log in with the Administrator password.  On the client, log in with the password you created for the Windows 11 VM.
+6. Once both VMs are running, log in to each.  On the server, log in as LAB\Administrator (or whatever you named your domain) and enter the Administrator password.  On the client, log in with the password you created for the Windows 11 VM.
 
 ---
 
@@ -87,8 +87,8 @@ For Active Directory to function properly, your server and client need static IP
    ```
 
 6. Log into the Server as **Administrator**.
-7. Open **Control Panel** → **Network and Sharing Center** → **Change adapter settings**.
-8. Right-click the **Internal Network adapter** and choose **Properties**.
+7. Open **Control Panel** → **Network and Internet** → **Network and Sharing Center** → **Change adapter settings**.
+8. Right-click the **Ethernet** (should also have the domain name listed) and choose **Properties**.
 9. Select **Internet Protocol Version 4 (TCP/IPv4)** and click **Properties**.
 10. Set the following under **Use the following IP address:**:
    - Replace `x` with actual server IP and Default Gateway.
