@@ -71,7 +71,7 @@ This tutorial sets up a **NAT Network** in VirtualBox to allow both your **Windo
 
 ---
 
-## Step 5: Verify Network Connectivity
+## Step 5: Configure Static IP Addresses and DNS Settings
 
 ### On the Server:
 
@@ -82,7 +82,7 @@ This tutorial sets up a **NAT Network** in VirtualBox to allow both your **Windo
    ```
 3. Confirm that the Server has an IP address in the NAT Network range (e.g., `10.0.2.x`).
 4. Also, make note of the Subnet Mask (`255.255.255.0`), and the Default Gateway (e.g., `10.0.2.1`).
-5. Ping the internet:
+5. Ping the internet to verify connectivity:
    ```
    ping google.com
    ```
