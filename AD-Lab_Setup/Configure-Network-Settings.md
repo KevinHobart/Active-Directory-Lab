@@ -15,7 +15,7 @@ This ensures you have a reset point in case you run into problems.
 ---
 ---
 
-# NAT Network Setup in VirtualBox
+# NAT Network Setup 
 
 This tutorial sets up a **NAT Network** in VirtualBox to allow both your **Windows Server 2022 Domain Controller** and your **Windows 11 Client VM** to communicate with each other **and access the internet**. This setup is beginner-friendly and ideal for basic Active Directory labs.
 
@@ -125,7 +125,11 @@ This tutorial sets up a **NAT Network** in VirtualBox to allow both your **Windo
 ---
 ---
 
-  
+# Internal Network Setup (Enterprise)
+This tutorial sets up an **Internal Network in VirtualBox**.  This configuration will more closely resemble a network found in a real-world enterprise setting.  The server (Domain Controller) will have access to the internet, and will route traffic from the Internal Network (Client machines) to the NAT adapter to provide internet access for the Windows 11 VM (Client).
+
+---
+
 ## Step 1: Set the VirtualBox Network Adapter Type
 
 You’ll need to configure two network adapters for your **Windows Server 2022** VM:
