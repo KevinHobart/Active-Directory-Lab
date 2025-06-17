@@ -190,7 +190,133 @@ Now is a great time to take a **VirtualBox snapshot** of the Windows 11 client i
 - You can optionally install a routing or NAT tool on the server if internet is needed for clients
 
 
+# Configure Windows Server 2022 to Share Internet with Internal Network Clients
+This tutorial walks you through configuring a Windows Server 2022 VM to share its internet connection with a Windows 11 client VM over an internal VirtualBox network. This is done by installing and configuring **RRAS (Routing and Remote Access Services)** on the server.
 
+---
+
+## 🧱 Lab Setup Overview
+
+| VM           | Adapter 1        | Adapter 2         | Purpose                                      |
+|--------------|------------------|--------------------|----------------------------------------------|
+| Server 2022  | NAT              | Internal Network   | Connects to internet & LAN (AD network)      |
+| Windows 11   | Internal Network | *(Optional: NAT)*  | Connects to server and domain                 |
+
+> 💡 *This guide assumes your Windows Server 2022 VM is already promoted to a Domain Controller and your Windows 11 VM is on the same internal network.*
+
+---
+
+## Step 1: Add the Remote Access Role
+
+1. On the **Windows Server 2022 VM**, open **Server Manager**.
+2. Go to **Manage > Add Roles and Features**.
+3. Proceed through the wizard:
+   - **Installation Type**: Role-based
+   - **Server Selection**: Choose local server
+   - **Server Roles**:
+     - Check **Remote Access**
+   - **Features**: Leave default
+   - **Role Services**:
+     - Under Remote Access, check:
+       - **Routing**
+       - *(Optionally, you can also check DirectAccess and VPN (RAS), but not required here)*
+4. Click **Next**, then **Install**.
+5. Reboot the server if prompted.
+
+> 📸 _Screenshot here: Add Roles wizard with Remote Access and Routing checked_
+
+---
+
+## Step 2: Configure RRAS for NAT Routing
+
+1. After reboot, go to **Tools > Routing and Remote Access** from Server Manager.
+2. Right-click your server name and choose **Configure and Enable Routing and Remote Access**.
+3. Use the **NAT** option in the configuration wizard:
+   - Choose **Network Address Translation (NAT)**
+4. Select the **external adapter** (the one connected to NAT — usually `Ethernet0`).
+   - Confirm this by checking `ipconfig` — the NAT adapter will have an IP like `10.0.2.x`.
+5. Click **Next**, and when prompted, mark the **internal adapter** (Internal Network) as private.
+6. Finish the wizard and **start the RRAS service** if prompted.
+
+> 📸 _Screenshot here: RRAS setup wizard showing external (NAT) adapter selected_  
+> 📸 _Screenshot here: internal network adapter marked as private_
+
+---
+
+## Step 3: Enable NAT on the External Adapter
+
+1. In **Routing and Remote Access**, expand:
+   - `IPv4` → `NAT`
+2. Right-click the **external interface** (NAT), and go to **Properties**.
+3. Under the **General** tab:
+   - Check **Enable NAT on this interface**
+4. Apply and close the window.
+
+> 📸 _Screenshot here: NAT interface properties with Enable NAT checked_
+
+---
+
+## Step 4: Configure the Internal Network Adapter (Optional DHCP)
+
+1. (Optional but recommended) Right-click the **internal network interface** and go to **Properties**.
+2. If you'd like the server to assign IPs to the client:
+   - Go to the **Address Pool** tab
+   - Add a range, e.g.:
+     - Start: `192.168.10.100`
+     - End: `192.168.10.200`
+
+If you're using a static IP on the client, skip this part.
+
+> 📸 _Screenshot here: NAT properties with Address Pool set_
+
+---
+
+## Step 5: Configure the Client (Windows 11 VM)
+
+1. Set the **Internal Network** adapter in VirtualBox.
+2. Power on the VM.
+3. On Windows 11:
+   - Go to **Network Settings** > Adapter Options
+   - Right-click the internal adapter > **Properties**
+4. Manually assign IP settings:
+   - IP: `192.168.10.10`
+   - Subnet Mask: `255.255.255.0`
+   - Default Gateway: `192.168.10.1` *(Server's internal IP)*
+   - DNS: Same as the server
+
+Alternatively, allow it to receive settings via DHCP if configured above.
+
+> 📸 _Screenshot here: Client IP configuration window_
+
+---
+
+## Step 6: Test the Connection
+
+1. From the **client**, open **Command Prompt** and run:
+
+   ```bash
+   ping 8.8.8.8
+   ```
+
+   or open a browser and try loading a website.
+
+2. If you get replies or the webpage loads — ✅ success!
+
+> 📸 _Screenshot here: successful ping or browser with website loaded_
+
+---
+
+## 🔒 Notes & Troubleshooting
+
+- If ping fails:
+  - Ensure the **Default Gateway** is set correctly.
+  - Double-check NAT is enabled on the **external** adapter in RRAS.
+  - Windows Firewall may need to allow forwarding.
+- If needed, enable **IP Forwarding** via Registry:
+  - Open `regedit` and go to:  
+    `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`
+  - Set `IPEnableRouter = 1`
+- Restart RRAS after making changes.
 
 
 
