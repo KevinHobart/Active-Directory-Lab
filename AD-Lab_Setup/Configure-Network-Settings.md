@@ -109,6 +109,46 @@ This tutorial sets up a **NAT Network** in VirtualBox to allow both your **Windo
 
 ---
 
+## Step 6: Configure Static IP Addresses and DNS Settings
+
+For Active Directory to function properly, your server and client need static IP addresses, and correct DNS configuration. We'll assign a static IP to the **Windows Server 2022** VM and have it point to itself for DNS. Then, we’ll set a static IP for the **Windows 11** VM and configure it to use the server's IP as its DNS.
+
+---
+
+### Configure the Server (Windows Server 2022)
+
+1. Log into the Server as **Administrator**.
+2. Open **Control Panel** → **Network and Sharing Center** → **Change adapter settings**.
+3. Right-click the **Internal Network adapter** and choose **Properties**.
+4. Select **Internet Protocol Version 4 (TCP/IPv4)** and click **Properties**.
+5. Set the following:
+   - **IP Address**: `192.168.10.1`
+   - **Subnet Mask**: `255.255.255.0`
+   - **Default Gateway**: Leave blank (unless routing to external networks)
+   - **Preferred DNS Server**: `192.168.10.1` (points to itself)
+6. Click **OK**, then **Close**.
+
+📸 *Screenshot: TCP/IPv4 settings with static IP for server*
+
+---
+
+### Configure the Client (Windows 11 VM)
+
+1. Log into the Windows 11 VM.
+2. Open **Control Panel** → **Network and Sharing Center** → **Change adapter settings**.
+3. Right-click the **Internal Network adapter** and choose **Properties**.
+4. Select **Internet Protocol Version 4 (TCP/IPv4)** and click **Properties**.
+5. Set the following:
+   - **IP Address**: `192.168.10.11`
+   - **Subnet Mask**: `255.255.255.0`
+   - **Default Gateway**: Leave blank (for now)
+   - **Preferred DNS Server**: `192.168.10.1` (points to the server)
+6. Click **OK**, then **Close**.
+
+📸 *Screenshot: TCP/IPv4 settings with static IP for client*
+
+
+
 ## ✅ Summary
 
 - Both VMs are connected to a shared NAT Network.
