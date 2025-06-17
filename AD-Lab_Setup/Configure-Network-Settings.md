@@ -89,18 +89,18 @@ For Active Directory to function properly, your server and client need static IP
    ping google.com
    ```
 
-1. Log into the Server as **Administrator**.
-2. Open **Control Panel** → **Network and Sharing Center** → **Change adapter settings**.
-3. Right-click the **Internal Network adapter** and choose **Properties**.
-4. Select **Internet Protocol Version 4 (TCP/IPv4)** and click **Properties**.
-5. Set the following:
+6. Log into the Server as **Administrator**.
+7. Open **Control Panel** → **Network and Sharing Center** → **Change adapter settings**.
+8. Right-click the **Internal Network adapter** and choose **Properties**.
+9. Select **Internet Protocol Version 4 (TCP/IPv4)** and click **Properties**.
+10. Set the following:
    - Replace `x` with actual server IP and Default Gateway.
    - **IP Address**: `10.0.2.x`
    - **Subnet Mask**: `255.255.255.0`
    - **Default Gateway**: `10.0.2.x`
    - **Preferred DNS Server**: `127.0.0.1` (points to itself)
-7. Click **OK**, then **Close**.
-8. Run ```ipconfig``` to verify.
+11. Click **OK**, then **Close**.
+12. Run ```ipconfig``` to verify.
 
 📸 *Screenshot: TCP/IPv4 settings with static IP for server*
 
@@ -124,17 +124,17 @@ For Active Directory to function properly, your server and client need static IP
 
 📸 *Screenshot suggestion:* Show successful ping between Client and Server.
 
-1. Log into the Windows 11 VM.
-2. Open **Control Panel** → **Network and Sharing Center** → **Change adapter settings**.
-3. Right-click the **Internal Network adapter** and choose **Properties**.
-4. Select **Internet Protocol Version 4 (TCP/IPv4)** and click **Properties**.
-5. Set the following:
+6. Log into the Windows 11 VM.
+7. Open **Control Panel** → **Network and Sharing Center** → **Change adapter settings**.
+8. Right-click the **Internal Network adapter** and choose **Properties**.
+9. Select **Internet Protocol Version 4 (TCP/IPv4)** and click **Properties**.
+10. Set the following:
    - Replace `x` with actual Windows 11 IP and Default Gateway.
    - **IP Address**: `10.0.2.x`
    - **Subnet Mask**: `255.255.255.0`
    - **Default Gateway**: `10.0.2.x`
    - **Preferred DNS Server**: IP address of the **server** (points to the server)
-7. Click **OK**, then **Close**.
+11. Click **OK**, then **Close**.
 
 📸 *Screenshot: TCP/IPv4 settings with static IP for client*
 
