@@ -32,7 +32,8 @@ This tutorial sets up a **NAT Network** in VirtualBox to allow both your **Windo
    - Has **DHCP Server** enabled
    - Uses a subnet like `10.0.2.0/24` (default is fine)
 
-📸 *Screenshot suggestion: 1
+![1VBNet](https://github.com/user-attachments/assets/05163795-9740-4064-a801-2cf5247b0ced)
+
 
 ---
 
@@ -46,7 +47,8 @@ This tutorial sets up a **NAT Network** in VirtualBox to allow both your **Windo
    - **Name:** Choose the NAT Network you just created
 4. Click **OK**.
 
-📸 *Screenshot suggestion:* 2
+![2VBNet](https://github.com/user-attachments/assets/0cb47287-c4ec-47dd-bda7-25ab8765b5c7)
+
 
 ---
 
@@ -60,7 +62,8 @@ This tutorial sets up a **NAT Network** in VirtualBox to allow both your **Windo
    - **Name:** Choose the same NAT Network used by the Server
 4. Click **OK**.
 
-📸 *Screenshot suggestion:* 3
+![3VBNet](https://github.com/user-attachments/assets/d08495e7-2085-44ad-af61-e35172bd40aa)
+
 
 5. Start both the **Server** and **Client** VMs.
 6. Once both VMs are running, log in to each.  On the server, log in as LAB\Administrator (or whatever you named your domain) and enter the Administrator password.  On the client, log in with the password you created for the Windows 11 VM.
@@ -87,10 +90,11 @@ For Active Directory to function properly, your server and client need static IP
    ```
    ping google.com
    ```
-   Image 4
+![4ipconfig](https://github.com/user-attachments/assets/c22a5db7-0066-4681-a34d-39c2ef6faa5e)
+
  
 7. Open **Control Panel** → **Network and Internet** → **Network and Sharing Center** → **Change adapter settings**.
-8. Right-click the **Ethernet** (should also have the domain name listed) and choose **Properties**.
+8. Right-click the **Ethernet** icon (should also have the domain name listed) and choose **Properties**.
 9. Select **Internet Protocol Version 4 (TCP/IPv4)** and click **Properties**.
 10. Set the following under **Use the following IP address:**:
    - Replace `x` with actual server IP and Default Gateway.
@@ -101,7 +105,9 @@ For Active Directory to function properly, your server and client need static IP
 11. Click **OK**, then **Close**.
 12. Run ```ipconfig /all``` to verify.
 
-📸 Image 5
+![5ipconfig](https://github.com/user-attachments/assets/9e834d95-fac5-4256-83c0-6a42fd66e5d7)
+
+
 
 ---
 
@@ -121,10 +127,11 @@ For Active Directory to function properly, your server and client need static IP
    ```
    (Replace `X` with the Server's actual IP)
 
-📸 Image 6
+![6ipconfig](https://github.com/user-attachments/assets/7c6a8bfe-6243-4006-b1a9-f599cdc79779)
+
 
 6. Open **Control Panel** → **Network and Internet** →**Network and Sharing Center** → **Change adapter settings**.
-7. Right-click the **Ethernet** (will have a name like: Network 2) and choose **Properties**.
+7. Right-click the **Ethernet** icon (will have a name like: Network 2) and choose **Properties**.
 8. Select **Internet Protocol Version 4 (TCP/IPv4)** and click **Properties**.
 9. Set the following under **Use the following IP address:**:
    - Replace `x` with actual Windows 11 IP and Default Gateway.
@@ -135,7 +142,9 @@ For Active Directory to function properly, your server and client need static IP
 10. Click **OK**, then **Close**.
 11. Run ```ipconfig /all``` to verify.
 
-📸 Image 7
+![7ipconfig](https://github.com/user-attachments/assets/a5e6bac8-d0ae-4a3a-839a-272e95c326bc)
+
+
 
 ---
 
