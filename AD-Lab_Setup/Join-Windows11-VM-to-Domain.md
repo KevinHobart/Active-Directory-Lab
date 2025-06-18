@@ -1,6 +1,6 @@
 # Join Windows 11 VM to the Domain & Create a Domain User
 
-This tutorial walks through how to join a Windows 11 VM to your Active Directory domain, and then how to create a new domain user for login. Ensure both your **Windows Server 2022 Domain Controller** and **Windows 11 Client** are powered on, connected to the same network, and properly configured.
+This tutorial will be the final tutorial for setting up an Active Directory home lab. It will provide steps on how to join a Windows 11 VM to your Active Directory domain, and then how to create a new domain user for login. Ensure both your **Windows Server 2022 Domain Controller** and **Windows 11 Client** are powered on, connected to the same network, and properly configured.
 
 ---
 
@@ -22,7 +22,7 @@ This tutorial walks through how to join a Windows 11 VM to your Active Directory
 ---
 
 ## Step 2: Rename the Windows 11 PC
-
+Before joining the Windows 11 VM to the domain, you'll want to rename the PC so it is easily identifiable when viewed on the domain controller.  A good naming convention would be **WS01**.  This denotes it as Workstation 01.  In the future, you can add more machines and continue with the naming scheme - WS02, WS03....WS21, and so on.
 1. On the **Windows 11 Client VM**:
    - Open **Settings > System > About**
    - Click **Rename this PC**
