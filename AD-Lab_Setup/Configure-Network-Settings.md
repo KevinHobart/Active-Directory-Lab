@@ -74,20 +74,21 @@ For Active Directory to function properly, your server and client need static IP
 
 ### Configure the Server (Windows Server 2022)
 
-1. Open **Command Prompt**.
-2. Type:
+1. Log into the Server as **Administrator**.
+2. Open **Command Prompt**.
+3. Type:
    ```
    ipconfig
    ```
    Image 4
-3. Confirm that the Server has an IP address in the NAT Network range (e.g., `10.0.2.x`).
-4. Also, make note of the Subnet Mask (`255.255.255.0`), and the Default Gateway (e.g., `10.0.2.1`).
-5. Ping the internet to verify connectivity:
+4. Confirm that the Server has an IP address in the NAT Network range (e.g., `10.0.2.x`).
+5. Also, make note of the Subnet Mask (`255.255.255.0`), and the Default Gateway (e.g., `10.0.2.1`).
+6. Ping the internet to verify connectivity:
    ```
    ping google.com
    ```
 
-6. Log into the Server as **Administrator**.
+ 
 7. Open **Control Panel** → **Network and Internet** → **Network and Sharing Center** → **Change adapter settings**.
 8. Right-click the **Ethernet** (should also have the domain name listed) and choose **Properties**.
 9. Select **Internet Protocol Version 4 (TCP/IPv4)** and click **Properties**.
