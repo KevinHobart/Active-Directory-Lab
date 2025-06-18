@@ -74,20 +74,20 @@ For Active Directory to function properly, your server and client need static IP
 
 ### Configure the Server (Windows Server 2022)
 
-1. Log into the Server as **Administrator**.
+1. Be sure you are logged in to the Server as **Administrator**.
 2. Open **Command Prompt**.
 3. Type:
    ```
    ipconfig
    ```
-   Image 4
+   
 4. Confirm that the Server has an IP address in the NAT Network range (e.g., `10.0.2.x`).
 5. Also, make note of the Subnet Mask (`255.255.255.0`), and the Default Gateway (e.g., `10.0.2.1`).
 6. Ping the internet to verify connectivity:
    ```
    ping google.com
    ```
-
+   Image 4
  
 7. Open **Control Panel** → **Network and Internet** → **Network and Sharing Center** → **Change adapter settings**.
 8. Right-click the **Ethernet** (should also have the domain name listed) and choose **Properties**.
@@ -99,15 +99,15 @@ For Active Directory to function properly, your server and client need static IP
    - **Default Gateway**: `10.0.2.x`
    - **Preferred DNS Server**: `127.0.0.1` (points to itself)
 11. Click **OK**, then **Close**.
-12. Run ```ipconfig``` to verify.
+12. Run ```ipconfig /all``` to verify.
 
-📸 *Screenshot: TCP/IPv4 settings with static IP for server*
+📸 Image 5
 
 ---
 
 ### Configure the Client (Windows 11 VM)
 
-1. Log in to the **Windows 11 Client**.
+1. Be sure you are logged in to the **Windows 11 Client VM**.
 2. Open **Command Prompt**.
 3. Type:
    ```
@@ -121,21 +121,21 @@ For Active Directory to function properly, your server and client need static IP
    ```
    (Replace `X` with the Server's actual IP)
 
-📸 *Screenshot suggestion:* Show successful ping between Client and Server.
+📸 Image 6
 
-6. Log into the Windows 11 VM.
-7. Open **Control Panel** → **Network and Sharing Center** → **Change adapter settings**.
-8. Right-click the **Internal Network adapter** and choose **Properties**.
-9. Select **Internet Protocol Version 4 (TCP/IPv4)** and click **Properties**.
-10. Set the following under **Use the following IP address:**:
+6. Open **Control Panel** → **Network and Internet** →**Network and Sharing Center** → **Change adapter settings**.
+7. Right-click the **Ethernet** (will have a name like: Network 2) and choose **Properties**.
+8. Select **Internet Protocol Version 4 (TCP/IPv4)** and click **Properties**.
+9. Set the following under **Use the following IP address:**:
    - Replace `x` with actual Windows 11 IP and Default Gateway.
    - **IP Address**: `10.0.2.x`
    - **Subnet Mask**: `255.255.255.0`
    - **Default Gateway**: `10.0.2.x`
    - **Preferred DNS Server**: Here you will enter the `IP address` of the **server** (points to the server)
-11. Click **OK**, then **Close**.
+10. Click **OK**, then **Close**.
+11. Run ```ipconfig /all``` to verify.
 
-📸 *Screenshot: TCP/IPv4 settings with static IP for client*
+📸 Image 7
 
 ---
 
