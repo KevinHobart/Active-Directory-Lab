@@ -147,6 +147,7 @@ For Active Directory to function properly, your server and client need static IP
 
 
 ---
+## **Remember to take a snapshot of both VMs!**
 ## The Client machine (Windows 11 VM) is now ready to be joined to the domain
 ## ✅ Summary
 
