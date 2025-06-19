@@ -95,6 +95,7 @@ Before joining the Windows 11 VM to the domain, you'll want to rename the PC so 
 ---
 
 ## Step 5: Create a New Domain User (on Server)
+In this step, you will create a new domain user.  You will then be able log into your Windows 11 VM (Client machine) with the new users credentials.
 
 1. On the **Windows Server 2022 Domain Controller**:
    - Open **Server Manager**
