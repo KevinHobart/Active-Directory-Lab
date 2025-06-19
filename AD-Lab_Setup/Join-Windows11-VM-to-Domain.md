@@ -9,20 +9,23 @@ This tutorial will be the final tutorial for setting up an Active Directory home
 1. On the **Windows 11 Client VM**, open **Command Prompt** and ping the domain controller.
 
    ```bash
-   ping dc01.local
+   ping lab.local
    ```
 
-   Replace `dc01.local` with your actual domain name.
+   Replace `lab.local` with your actual domain name.
 
    - If the ping is successful, proceed.
    - If not, check your network settings and DNS configuration.
 
-   📸 *Insert screenshot of a successful ping from Windows 11 to the DC.*
+   📸 *Insert screenshot 1
 
 ---
 
 ## Step 2: Rename the Windows 11 PC
-Before joining the Windows 11 VM to the domain, you'll want to rename the PC so it is easily identifiable when viewed on the domain controller.  A good naming convention would be **WS01**.  This denotes it as Workstation 01.  In the future, you can add more machines and continue with the naming scheme - WS02, WS03....WS21, and so on.
+Before joining the Windows 11 VM to the domain, you'll want to rename the PC so it is easily identifiable when viewed on the domain controller.  
+- A good naming convention would be **WS01**.  This denotes it as Workstation 01.
+- In the future, you can add more machines and continue with the naming scheme - WS02, WS03....WS21, and so on.
+  
 1. On the **Windows 11 Client VM**:
    - Open **Settings > System > About**
    - Click **Rename this PC**
@@ -33,7 +36,7 @@ Before joining the Windows 11 VM to the domain, you'll want to rename the PC so 
 
 3. Click **Next**, then **Restart now** when prompted.
 
-   📸 *Insert screenshot of confirmation to rename and restart.*
+   📸 *Insert screenshot 2
 
 4. After restart, verify the name change by opening **Command Prompt** and typing:
 
@@ -48,28 +51,25 @@ Before joining the Windows 11 VM to the domain, you'll want to rename the PC so 
 ## Step 3: Join Windows 11 to the Domain
 
 1. On the **Windows 11 Client VM**:
-   - Open **Settings > System > About**
-   - Click **Domain or workgroup** under **Related links**.
+   - Search for and select: **Access work or school**
 
-   📸 *Insert screenshot of the "About" page with the domain link.*
+2. Click **Connect**
+   - Select **Join this device to a local Active Directory domain** in the pop up window.
 
-2. In the **System Properties** window, click **Change**.
+   📸 *Insert screenshot 3
 
-   📸 *Insert screenshot of the Computer Name/Domain Changes window.*
-
-3. Under **Member of**, select **Domain**, and enter your domain name (e.g., `dc01.local`).
-
-4. Click **OK**.
-
-5. Enter credentials for a domain user with permission to join the domain (usually the domain admin):
-   - **Username**: `Administrator`
+4. Enter your domain name (e.g., `LAB.local`).
+   - Click **Next**
+   Image 4
+   
+6. Enter credentials for the domain user with permission to join the domain (this will be the administrator password you created to login to the server/domain controller):
+   - **Username**: `administrator`
    - **Password**: *(your domain admin password)*
-
-6. If successful, you’ll get a welcome message to the domain. Click **OK**.
-
-   📸 *Insert screenshot of successful domain join message.*
-
-7. You will be prompted to restart. Click **OK** and then restart the VM.
+   Image 5
+7. Leave defaults on the *Add an account* window
+   - Click **Next**
+   Image 6
+8. You will be prompted to restart. Click **Restart now**
 
 ---
 
