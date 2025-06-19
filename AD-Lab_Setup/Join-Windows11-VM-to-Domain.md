@@ -31,8 +31,6 @@ Before joining the Windows 11 VM to the domain, you'll want to rename the PC so 
    - Open **Settings > System > About**
    - Click **Rename this PC**
 
-   📸 *Insert screenshot of the "About" page with the rename link.*
-
 2. Enter the new name: `WS01`
 
 3. Click **Next**, then **Restart now** when prompted.
