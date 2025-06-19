@@ -17,7 +17,7 @@ This tutorial will be the final tutorial for setting up an Active Directory home
    - If the ping is successful, proceed.
    - If not, check your network settings and DNS configuration.
 
-   📸 *Insert screenshot 1
+   ![1ping](https://github.com/user-attachments/assets/006b8582-0991-4f15-a603-4a0becef8d39)
 
 ---
 
@@ -36,7 +36,7 @@ Before joining the Windows 11 VM to the domain, you'll want to rename the PC so 
 
 3. Click **Next**, then **Restart now** when prompted.
 
-   📸 *Insert screenshot 2
+   ![2rename](https://github.com/user-attachments/assets/3f419c12-f28b-496f-ac77-7c8a214458bc)
 
 4. After restart, verify the name change by opening **Command Prompt** and typing:
 
@@ -56,34 +56,42 @@ Before joining the Windows 11 VM to the domain, you'll want to rename the PC so 
 2. Click **Connect**
    - Select **Join this device to a local Active Directory domain** in the pop up window.
 
-   📸 *Insert screenshot 3
+   ![3domain_join](https://github.com/user-attachments/assets/e6a107d1-4dbc-4554-aa1f-80a06e32566f)
+
 
 3. Enter your domain name (e.g., `LAB.local`).
    - Click **Next**
-   Image 4
+     
+   ![4domain_join](https://github.com/user-attachments/assets/367f5cef-de8f-4c53-809e-8ea7535aa579)
+
    
 4. Enter credentials for the domain user with permission to join the domain (this will be the administrator password you created to login to the server/domain controller):
    - **Username**: `administrator`
    - **Password**: *(your domain admin password)*
-   Image 5
+     
+   ![5domain_join](https://github.com/user-attachments/assets/79711a53-dae0-4fb1-951e-b02b773a0521)
+
 5. Leave defaults on the *Add an account* window
    - Click **Next**
-   Image 6
+     
+   ![6domain_join](https://github.com/user-attachments/assets/20263fd0-9dbf-4cf8-bc18-f8a88f8beda4)
+
 6. You will be prompted to restart. Click **Restart now**
 
 ---
 
 ## Step 4: Verify Domain Join
 
-1. After reboot, on the **login screen**, click **Other user**.
+1. After reboot, on the **login screen**, you should see options to login as domain administrator (LAB\administrator, replace *LAB* with the name of your domain).
 
-2. Log in with:
-   - **Username**: `yourdomain\username` (e.g., `dc01\Administrator`)
-   - **Password**: *(domain password)*
+2. Go ahead and log in with the admin credentials, as we don't have any other users set up, yet.
+   
+   ![7domain_join](https://github.com/user-attachments/assets/fef31870-e860-4334-bc1a-463d6784b036)
 
-   📸 *Insert screenshot of login screen with domain user selected.*
 
-3. You should now be logged into the domain.
+3. You should now be logged into the domain as the administrator.
+   
+   ![8domain_join](https://github.com/user-attachments/assets/a2e51668-c814-4c10-83f9-d77da5faa566)
 
 ---
 
