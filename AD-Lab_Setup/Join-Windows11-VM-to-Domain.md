@@ -1,6 +1,7 @@
 # Join Windows 11 VM to the Domain & Create a Domain User
 
-This will be the final tutorial for setting up an Active Directory home lab. It will provide steps on how to join a Windows 11 VM to your Active Directory domain, followed by steps to create a new domain user for login. Ensure both your **Windows Server 2022 Domain Controller** and **Windows 11 Client** are powered on, connected to the same network, and properly configured.
+This will be the final tutorial for setting up an Active Directory home lab. It will provide steps on how to join a Windows 11 VM to your Active Directory domain, followed by steps to create a new domain user for login. 
+- Ensure both your **Windows Server 2022 Domain Controller** and **Windows 11 Client** are powered on, connected to the same network, and properly configured.
 
 ---
 
