@@ -58,18 +58,18 @@ Before joining the Windows 11 VM to the domain, you'll want to rename the PC so 
 
    📸 *Insert screenshot 3
 
-4. Enter your domain name (e.g., `LAB.local`).
+3. Enter your domain name (e.g., `LAB.local`).
    - Click **Next**
    Image 4
    
-6. Enter credentials for the domain user with permission to join the domain (this will be the administrator password you created to login to the server/domain controller):
+4. Enter credentials for the domain user with permission to join the domain (this will be the administrator password you created to login to the server/domain controller):
    - **Username**: `administrator`
    - **Password**: *(your domain admin password)*
    Image 5
-7. Leave defaults on the *Add an account* window
+5. Leave defaults on the *Add an account* window
    - Click **Next**
    Image 6
-8. You will be prompted to restart. Click **Restart now**
+6. You will be prompted to restart. Click **Restart now**
 
 ---
 
