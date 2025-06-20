@@ -101,7 +101,8 @@ In this step, you will create a new domain user.  You will then be able log into
    - Open **Server Manager**, if not already open.
    - Click **Tools > Active Directory Users and Computers**
 
-   📸 *Insert screenshot 9
+   ![9new_user](https://github.com/user-attachments/assets/c749504d-5068-4b0a-b073-e5fe3256515b)
+
 
 2. In the left pane, expand your domain (LAB.local - replace *LAB* with your domain name).  
    - Before adding the new user:
@@ -111,33 +112,42 @@ In this step, you will create a new domain user.  You will then be able log into
 3. Click on **Users**  
    - You will see Users listed, as well as built-in groups.  For organizational ease, we'll create another Organizational Unit (OU) to hold the groups:
      - **Right-click** on your domain (LAB.local), select **New**, select **Organizational Unit**.
-     📸 *Insert screenshot 10
+       
+       ![10new_user](https://github.com/user-attachments/assets/422e1ba4-f38c-437d-8040-1ca148cd750c)
+
      - Name the Organizational Unit (OU) **Groups**, and click **OK**.
-     Image 11
+       ![11new_user](https://github.com/user-attachments/assets/9e8e873d-41ee-483f-8d69-230b9904ff8e)
+
      - Click on th **Users** folder, select all of the Groups, and drag them to **Groups**
      - You will get a warning, just click **Yes**.  Read the warning to see why it's alerting you.  This doesn't affect the lab environment at this point, but will be important to know for future projects within this home lab.  
-     Image 12
+       ![12new_user](https://github.com/user-attachments/assets/d6396a7e-16fb-4226-b188-89b6448707e8)
+
 
 4. Click on **Users**
    - You will see **Administrator**, and **Guest**.
      - **Administrator** is the account you first set up for the server/domain controller.  This is SysAdmin account, and has the ability to make any changes within this Active Directory domain.
      - **Guest** is a built-in user.  Note that the *down arrow* next to **Guest** indicates that the account is disabled.
-     Image 13
+       ![13new_user](https://github.com/user-attachments/assets/06e36dab-13e1-4945-ad80-40ae443e4217)
+
    - **Right-click** on **Users**, select **New**, select **User**.
-     Image 14
+     ![14new_user](https://github.com/user-attachments/assets/f7105f5e-7590-4f8d-8931-d6c70140eddf)
+
    - In the *New Object - User* window, fill in the following with the name of your choice:
    - **First name**: Jane
    - **Last name**: Smith
    - **User logon name**: jsmith
    - Click **Next**  
-   Image 15
+     ![15new_user](https://github.com/user-attachments/assets/3c4b75a9-daf5-4eea-885e-6a3b015ebbb6)
+
 
 5. Set a strong password:
    - Uncheck **User must change password at next logon**
    - Check **Password never expires** (easier for lab use)
    - Click **Next**, and then click **Finish**.
    - Reminder: to view Users and Computers, Click **Tools > Active Directory Users and Computers**
-   📸 *Insert screenshot 16,17
+   ![16new_user](https://github.com/user-attachments/assets/ef6564b9-3490-46c7-a452-4d62590edf6a)
+   ![17new_user](https://github.com/user-attachments/assets/36842dd9-eb27-4d7d-a38a-664761d6605d)
+
 
 ---
 
@@ -151,10 +161,12 @@ In this step, you will create a new domain user.  You will then be able log into
    - **Username**: `user you created (e.g. bhill)`
    - **Password**: *(set in Step 5)*
 
-   📸 18
+   ![18user_login](https://github.com/user-attachments/assets/cf501292-0249-4ebe-8759-2a96a83e12ce)
+
 
 4. You should now be logged in as the new domain user!
-   Image 19
+   ![19user_login](https://github.com/user-attachments/assets/8755b5b5-3d37-42cf-82c1-0ccd24cbbbb2)
+
 ---
 
 ## Notes
