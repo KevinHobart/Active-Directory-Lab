@@ -78,6 +78,61 @@ The following is a table of contents in the recommended order of completion:
 5. Joining the Windows 11 VM to the Active Directory domain.
    - [AD-Lab_Setup/Join-Windows11-VM-to-Domain.md](https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Join-Windows11-VM-to-Domain.md)
 
+---
+
+---
+
+### 1. Downloading Windows 11 ISO and Installing on a VirtualBox VM
+
+- Download the Windows 11 Enterprise ISO from the official Microsoft Evaluation Center.  
+- Configure a new VM in VirtualBox with recommended resources (4 GB+ RAM, 2+ CPUs).  
+- Complete the Windows 11 setup process with standard settings and licensing terms.  
+- Install Guest Additions to enable proper VM integration (e.g. resolution, clipboard).  
+- Create an initial snapshot after installation for quick restore points.
+
+---
+
+### 2. Downloading Windows Server 2022 and Installing on a VirtualBox VM
+
+- Obtain the Windows Server 2022 ISO from Microsoft Evaluation Center.  
+- Set up a new VirtualBox VM with recommended specs (8 GB RAM, 2–4 CPUs).  
+- Perform a clean install choosing “Windows Server 2022 Standard (Desktop Experience).”  
+- Set a strong Administrator password after first boot and complete setup.  
+- Install VirtualBox Guest Additions and take a clean snapshot for recovery.
+
+---
+
+### 3. Installing Active Directory Domain Services and Promoting to a Domain Controller
+
+- Log in to your Server VM as the Administrator and open Server Manager.  
+- Add the Active Directory Domain Services (AD DS) role and complete feature installation.  
+- Promote the server to a new forest and configure the desired domain name (e.g. `mydomain.local`).  
+- Set a Directory Services Restore Mode (DSRM) password during promotion.  
+- Restart the server after promotion — it will now serve as the Domain Controller.
+
+---
+
+### 4. Configuring Network Settings (NAT Network and DNS)
+
+- Configure both the Server and Windows 11 VM to use a **NAT Network** in VirtualBox.  
+- Assign a static IP address to the Domain Controller VM and set its DNS to its own IP address.  
+- Assign a static IP to the Windows 11 VM and configure its DNS to point to the Domain Controller.  
+- Test basic connectivity by pinging the server’s IP and verifying DNS resolution.  
+- Save a snapshot of both VMs after setup for an easy restore point if anything goes wrong.
+
+---
+
+### 5. Joining the Windows 11 VM to the Domain and Creating a User
+
+- Verify that the Windows 11 VM can resolve the domain and can ping the Domain Controller.  
+- Rename the Windows 11 VM (e.g. `WS01`), then join it to the Active Directory domain.  
+- Restart the Windows 11 VM and log in as the local Administrator after joining.  
+- On the Server VM, create a new Active Directory user in **Active Directory Users and Computers**.  
+- Log in to the Windows 11 VM with the new domain user credentials to confirm successful setup.
+
+
+
+
 
 
 
