@@ -13,8 +13,9 @@ The primary goals of this project are:
 #### 2. Configure Windows 11 VM:
   - Configure to allow connection with Active Directory domain.
 #### 3. Configure Windows Server 2022 VM:
-  - Add Active Directory service.
-  - Promote to Domain Controller.
+  - Add Active Directory service
+  - Promote to Domain Controller
+  - Add Users
 #### 4. Configure network settings
 #### 5. Join Windows 11 VM to Active Directory domain.
 
