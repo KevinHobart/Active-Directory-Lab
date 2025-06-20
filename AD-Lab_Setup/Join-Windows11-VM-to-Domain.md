@@ -101,15 +101,27 @@ In this step, you will create a new domain user.  You will then be able log into
    - Open **Server Manager**
    - Click **Tools > Active Directory Users and Computers**
 
-   📸 *Insert screenshot of Server Manager with ADUC opened.*
+   📸 *Insert screenshot 9
 
-2. In the left pane, expand your domain and right-click the **Users** folder.
+2. In the left pane, expand your domain (LAB.local - replace *LAB* with your domain name).  
+   - Before adding the new user:
+       - Click on the **Computers** folder, you should see your WS01 computer listed.
+       - Next, click on the **Domain Controllers** folder, you should see your DC01 domain controller listed.
+         
+3. Click on **Users**  
+   - You will see Users listed, as well as built-in groups.  For organizational ease, we'll create another Organizational Unit (OU) to hold the groups:
+     - **Right-click** on your domain (LAB.local), select **New**, select **Organizational Unit**.
+     📸 *Insert screenshot 10
+     - Name the Organizational Unit (OU) **Groups**, and click **OK**.
+     Image 11
+     - Click on th **Users** folder, select all of the Groups, and drag them to **Groups**
+     - You will get a warning, just click **Yes**.  Read the warning to see why it's alerting you.  This doesn't affect the lab environment at this point, but will be important to know for future projects within this home lab.  
+     Image 12
 
-3. Choose **New > User**.
-
-   📸 *Insert screenshot of the New User wizard.*
-
-4. Fill out the required fields:
+4. Click on **Users**
+   - You will see **Administrator**, and **Guest**.
+     - **Administrator** is the account you first set up for the server/domain controller.  This is SysAdmin account, and has the ability to make any and all changes within this Active Directory domain.
+     - **Guest** is a built-in user.  Note that the *down arrow* next to **Guest** indicates that the account is disabled.
    - **First name**: John
    - **User logon name**: jdoe
    - Click **Next**
