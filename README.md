@@ -64,7 +64,9 @@ The primary goals of this project are:
 
 ## Steps for setting up the lab environment.  
 
-
+This project consists of five components for setting up an Active Directory home lab environment.  
+Here is a table of contents (including links) with recommended order of completion:
+1. Downloading Windows 11 ISO and intalling on a VirtualBox VM. 
 
 
 
