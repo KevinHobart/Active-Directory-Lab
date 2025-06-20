@@ -98,7 +98,7 @@ Before joining the Windows 11 VM to the domain, you'll want to rename the PC so 
 In this step, you will create a new domain user.  You will then be able log into your Windows 11 VM (Client machine) with the new users credentials.
 
 1. On the **Windows Server 2022 Domain Controller**:
-   - Open **Server Manager**
+   - Open **Server Manager**, if not already open.
    - Click **Tools > Active Directory Users and Computers**
 
    📸 *Insert screenshot 9
@@ -120,18 +120,24 @@ In this step, you will create a new domain user.  You will then be able log into
 
 4. Click on **Users**
    - You will see **Administrator**, and **Guest**.
-     - **Administrator** is the account you first set up for the server/domain controller.  This is SysAdmin account, and has the ability to make any and all changes within this Active Directory domain.
+     - **Administrator** is the account you first set up for the server/domain controller.  This is SysAdmin account, and has the ability to make any changes within this Active Directory domain.
      - **Guest** is a built-in user.  Note that the *down arrow* next to **Guest** indicates that the account is disabled.
-   - **First name**: John
-   - **User logon name**: jdoe
-   - Click **Next**
+     Image 13
+   - **Right-click** on **Users**, select **New**, select **User**.
+     Image 14
+   - In the *New Object - User* window, fill in the following with the name of your choice:
+   - **First name**: Jane
+   - **Last name**: Smith
+   - **User logon name**: jsmith
+   - Click **Next**  
+   Image 15
 
 5. Set a strong password:
-   - Uncheck **User must change password at next logon** (optional)
-   - Check **Password never expires** for lab use
-   - Click **Next > Finish**
-
-   📸 *Insert screenshot of completed new user wizard.*
+   - Uncheck **User must change password at next logon**
+   - Check **Password never expires** (easier for lab use)
+   - Click **Next**, and then click **Finish**.
+   - Reminder: to view Users and Computers, Click **Tools > Active Directory Users and Computers**
+   📸 *Insert screenshot 16,17
 
 ---
 
