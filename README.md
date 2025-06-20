@@ -25,8 +25,8 @@ The primary goals of this project are:
 - **Virtualization:** How to propery allocate and manage hardware and networking resources when setting up and using a virtual machine.
 - **Windows 11:** How to Download, install, and configure Windows 11 to be used as the client (end user) machine in an Active Directory domain.
 - **Windows Server 2022:** How to Download, install, and configure Windows Server 2022, for use as an Active Directory Domain Controller.
-- **Active Directory:**
-- 
+- **Active Directory:** How to Install and configure Active Directory Domain Services (AD DS) on Windows Server 2022, and promote to a Domain Conroller.  How to add Users to the domain.
+
 
 
 
