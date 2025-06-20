@@ -3,7 +3,7 @@
 ---
 
 ## Overview
-
+https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Join-Windows11-VM-to-Domain.md
 This project demonstrates the comprehensive setup of an Active Directory home lab using virtualization (VirtualBox).  
 The Active Directory home lab can then be used as a learning platform to simulate various IT workflows.  
 The primary goals of this project are:
@@ -62,15 +62,21 @@ The primary goals of this project are:
 - Policy-based administration eases the management of even the most complex network.
 - Link: [Active Directory Domain Services overview](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)
 
-## Steps for setting up the lab environment.  
+## Steps for creating and setting up the lab environment.  
 
 This project consists of five components for setting up an Active Directory home lab environment.  
-Here is a table of contents (including links) with recommended order of completion:
-1. Downloading Windows 11 ISO and intalling on a VirtualBox VM. [AD-Lab_Setup/Windows11-VM-setup.md](https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Windows11-VM-setup.md)
-2. Downloading Windows Server 2022 and installing on a VirtualBox VM. [AD-Lab_Setup/Windows-Server-2022-VM-setup.md](https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Windows-Server-2022-VM-setup.md)
-3. Install Active Directory Domain Services on the Windows Server 2022 VM, and promote to a Domain Controller. [AD-Lab_Setup/Config-Server-as-AD-Domain-Controller.md](https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Config-Server-as-AD-Domain-Controller.md)
-4. Configure Network settings: Setting up a NAT Network and configuring DNS for proper functionality within the domain. [AD-Lab_Setup/Configure-Network-Settings.md](https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Configure-Network-Settings.md)
-5. Joining the Windows 11 VM to the Active Directory domain. [AD-Lab_Setup/Join-Windows11-VM-to-Domain.md](https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Join-Windows11-VM-to-Domain.md)
+The following is a table of contents in the recommended order of completion:  
+
+1. Downloading Windows 11 ISO and intalling on a VirtualBox VM.
+   - [AD-Lab_Setup/Windows11-VM-setup.md](https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Windows11-VM-setup.md)
+2. Downloading Windows Server 2022 and installing on a VirtualBox VM.
+   - [AD-Lab_Setup/Windows-Server-2022-VM-setup.md](https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Windows-Server-2022-VM-setup.md)
+3. Install Active Directory Domain Services on the Windows Server 2022 VM, and promote to a Domain Controller.
+   - [AD-Lab_Setup/Config-Server-as-AD-Domain-Controller.md](https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Config-Server-as-AD-Domain-Controller.md)
+4. Configure Network settings: Setting up a NAT Network and configuring DNS for proper functionality within the domain.
+   - [AD-Lab_Setup/Configure-Network-Settings.md](https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Configure-Network-Settings.md)
+5. Joining the Windows 11 VM to the Active Directory domain.
+   - [AD-Lab_Setup/Join-Windows11-VM-to-Domain.md](https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Join-Windows11-VM-to-Domain.md)
 
 
 
