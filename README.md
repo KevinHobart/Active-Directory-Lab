@@ -3,7 +3,7 @@
 ---
 
 ## Overview
-https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Join-Windows11-VM-to-Domain.md
+
 This project demonstrates the comprehensive setup of an Active Directory home lab using virtualization (VirtualBox).  
 The Active Directory home lab can then be used as a learning platform to simulate various IT workflows.  
 The primary goals of this project are:
