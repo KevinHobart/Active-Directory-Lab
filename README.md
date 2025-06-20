@@ -34,8 +34,7 @@ The primary goals of this project are:
   - Install and configure Active Directory Domain Services (AD DS) on Windows Server 2022, and promote to a Domain Controller.
   - Add Users to the domain.
 
-
-
+---
 
 ### Tools and Technologies Used
 
@@ -81,6 +80,9 @@ The following is a table of contents in the recommended order of completion:
 ---
 ---
 
+## Summaries of the project steps:
+I have provided below, summaries of each step for completing this project.  The link in each step will take you to full tutorial page for that step.  When completed, you will have successfuly set up a basic Active Directory home lab, consisting of one domain user and a domain administrator (sysadmin).  
+There are many projects you can complete using this home lab, including: creating/managing users, creating/managing groups, configuring/managing OUs (Organizational Units), and setting up and enforcing various policies.  
 
 ### 1. Downloading Windows 11 ISO and Installing on a VirtualBox VM
 
