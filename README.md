@@ -5,7 +5,7 @@
 ## Overview
 This project demonstrates the comprehensive setup of an Active Directory home lab using virtualization (VirtualBox).  
 The Active Directory home lab can then be used as a learning platform to simulate various IT workflows.  
-The primary goals of this lab are:
+The primary goals of this project are:
 
 #### 1. Create two virtual machines on VirtualBox:
   - Windows 11
@@ -15,7 +15,8 @@ The primary goals of this lab are:
 #### 3. Configure Windows Server 2022 VM:
   - Add Active Directory service.
   - Promote to Domain Controller.
-#### 4. Join Windows 11 VM to Active Directory domain.
+#### 4. Configure network settings
+#### 5. Join Windows 11 VM to Active Directory domain.
 
 ---
 
