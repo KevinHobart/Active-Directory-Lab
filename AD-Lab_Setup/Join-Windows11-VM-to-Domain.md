@@ -125,7 +125,7 @@ In this step, you will create a new domain user.  You will then be able log into
 
 4. Click on **Users**
    - You will see **Administrator**, and **Guest**.
-     - **Administrator** is the account you first set up for the server/domain controller.  This is SysAdmin account, and has the ability to make any changes within this Active Directory domain.
+     - **Administrator** is the account you first set up for the server/domain controller.  This is the SysAdmin account, and has the ability to make any changes within this Active Directory domain.
      - **Guest** is a built-in user.  Note that the *down arrow* next to **Guest** indicates that the account is disabled.
        ![13new_user](https://github.com/user-attachments/assets/06e36dab-13e1-4945-ad80-40ae443e4217)
 
@@ -141,7 +141,7 @@ In this step, you will create a new domain user.  You will then be able log into
 
 
 5. Set a strong password:
-   - Uncheck **User must change password at next logon**
+   - **Un**check **User must change password at next logon**
    - Check **Password never expires** (easier for lab use)
    - Click **Next**, and then click **Finish**.
    - Reminder: to view Users and Computers, Click **Tools > Active Directory Users and Computers**
@@ -166,6 +166,10 @@ In this step, you will create a new domain user.  You will then be able log into
 
 4. You should now be logged in as the new domain user!
    ![19user_login](https://github.com/user-attachments/assets/8755b5b5-3d37-42cf-82c1-0ccd24cbbbb2)
+
+---
+
+## Take a snapshot of BOTH VMs!
 
 ---
 
