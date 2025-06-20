@@ -33,7 +33,7 @@ The primary goals of this project are:
 
 ### Tools and Technologies Used
 - **Virtualization:** VirtualBox 7.0.26
-- **Operation Systems:**
+- **Operating Systems:**
        - Windows 11 (Client/User machine)
        - Windows Server 2022 (Domain Controller)
 - **Directory Service:**  Microsoft Active Directory Domain Services (AD DS)
