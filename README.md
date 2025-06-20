@@ -62,7 +62,9 @@ The primary goals of this project are:
 - Policy-based administration eases the management of even the most complex network.
 - Link: [Active Directory Domain Services overview](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)
 
-## Steps for setting up the lab environment.
+## Steps for setting up the lab environment.  
+
+
 
 
 
