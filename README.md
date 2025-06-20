@@ -84,6 +84,8 @@ The following is a table of contents in the recommended order of completion:
 I have provided below, summaries of each step for completing this project.  The link in each step will take you to full tutorial page for that step.  When completed, you will have successfuly set up a basic Active Directory home lab, consisting of one domain user and a domain administrator (sysadmin).  
 There are many projects you can complete using this home lab, including: creating/managing users, creating/managing groups, configuring/managing OUs (Organizational Units), and setting up and enforcing various policies.  
 
+---
+
 ### 1. Downloading Windows 11 ISO and Installing on a VirtualBox VM
 
 - Download the Windows 11 Enterprise ISO from the official Microsoft Evaluation Center.  
