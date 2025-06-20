@@ -148,13 +148,13 @@ In this step, you will create a new domain user.  You will then be able log into
 2. On the login screen, click **Other user**.
 
 3. Enter the new domain credentials:
-   - **Username**: `yourdomain\jdoe`
+   - **Username**: `user you created (e.g. bhill)`
    - **Password**: *(set in Step 5)*
 
-   📸 *Insert screenshot of login using `jdoe` account.*
+   📸 18
 
-4. You should now be logged in as the new domain user.
-
+4. You should now be logged in as the new domain user!
+   Image 19
 ---
 
 ## Notes
@@ -164,8 +164,5 @@ In this step, you will create a new domain user.  You will then be able log into
 - Firewall settings on the server
 - That the client and server are on the same internal network
 
-✅ Joining a Windows 11 machine to a domain simulates a common enterprise setup and enables you to practice user management, group policies, and permissions.
+✅ Joining a Windows 11 machine to a domain and creating domain users simulates a common enterprise setup and enables you to practice user management, group policies, permissions, etc, in an Active Directory environment.
 
----
-
-📸 *Insert screenshot suggestions where marked to enhance visual learning.*
