@@ -99,20 +99,20 @@ There are many projects that can be completed using this home lab, including:
 ### 1. 💻[Downloading Windows 11 ISO and Installing on a VirtualBox VM.](https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Windows11-VM-setup.md)
 
 - Download the Windows 11 Enterprise ISO from the official Microsoft Evaluation Center.  
-- Configure a new VM in VirtualBox with recommended resources (4 GB+ RAM, 2+ CPUs).  
+- Create a new VM in VirtualBox with recommended resources (4 GB+ RAM, 2+ CPUs).  
 - Complete the Windows 11 setup process with standard settings and licensing terms.  
-- Install Guest Additions to enable proper VM integration (e.g. resolution, clipboard).  
+- Install Guest Additions to enable proper VM integration.  
 - Create an initial snapshot after installation for quick restore points.
 
 ---
 
 ### 2. 💻[Downloading Windows Server 2022 and Installing on a VirtualBox VM](https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Windows-Server-2022-VM-setup.md)
 
-- Obtain the Windows Server 2022 ISO from Microsoft Evaluation Center.  
-- Set up a new VirtualBox VM with recommended specs (8 GB RAM, 2–4 CPUs).  
-- Perform a clean install choosing “Windows Server 2022 Standard (Desktop Experience).”  
-- Set a strong Administrator password after first boot and complete setup.  
-- Install VirtualBox Guest Additions and take a clean snapshot for recovery.
+- Download Windows Server 2022 ISO from Microsoft Evaluation Center.  
+- Create a new VirtualBox VM with recommended resources (8 GB RAM, 2–4 CPUs).  
+- Install Windows Server 2022 Standard (Desktop Experience).  
+- Set an Administrator password after first boot and complete setup.  
+- Install VirtualBox Guest Additions and take an intial snapshot for recovery.
 
 ---
 
