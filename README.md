@@ -88,7 +88,7 @@ Listed below are summaries of each step for completing this project.  The link i
  - Windows server 2022 with Active Directory Domain Services installed.
  - One domain user, and a domain administrator (sysadmin).
      
-There are many projects you can complete using this home lab, including: 
+There are many projects that can be completed using this home lab, including: 
  - Creating and managing users.
  - Creating and managing groups.
  - Configuring and managing OUs (Organizational Units).
