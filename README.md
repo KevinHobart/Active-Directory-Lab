@@ -81,8 +81,16 @@ The following is a table of contents in the recommended order of completion:
 ---
 
 ## Summaries of the project steps:
-I have provided below, summaries of each step for completing this project.  The link in each step will take you to full tutorial page for that step.  When completed, you will have successfuly set up a basic Active Directory home lab, consisting of one domain user and a domain administrator (sysadmin).  
-There are many projects you can complete using this home lab, including: creating/managing users, creating/managing groups, configuring/managing OUs (Organizational Units), and setting up and enforcing various policies.  
+Listed below are summaries of each step for completing this project.  The link in each step will take you to full tutorial page for that step.  When all steps have been completed, you will have successfuly set up a basic Active Directory home lab, consisting of:  
+ - Windows 11 client machine.
+ - Windows server 2022 with Active Directory Domain Services installed.
+ - One domain user, and a domain administrator (sysadmin).
+     
+There are many projects you can complete using this home lab, including: 
+ - Creating/managing users.
+ - Creating/managing groups.
+ - Configuring/managing OUs (Organizational Units).
+ - Setting up and enforcing various policies.  
 
 ---
 
