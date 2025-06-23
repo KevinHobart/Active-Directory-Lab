@@ -87,14 +87,14 @@ Listed below are summaries of each step for completing this project.  The link i
  - One domain user, and a domain administrator (sysadmin).
      
 There are many projects you can complete using this home lab, including: 
- - Creating/managing users.
- - Creating/managing groups.
- - Configuring/managing OUs (Organizational Units).
+ - Creating and managing users.
+ - Creating and managing groups.
+ - Configuring and managing OUs (Organizational Units).
  - Setting up and enforcing various policies.  
 
 ---
 
-### 1. Downloading Windows 11 ISO and Installing on a VirtualBox VM
+### 1. [Downloading Windows 11 ISO and Installing on a VirtualBox VM.](https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Windows11-VM-setup.md)
 
 - Download the Windows 11 Enterprise ISO from the official Microsoft Evaluation Center.  
 - Configure a new VM in VirtualBox with recommended resources (4 GB+ RAM, 2+ CPUs).  
@@ -104,7 +104,7 @@ There are many projects you can complete using this home lab, including:
 
 ---
 
-### 2. Downloading Windows Server 2022 and Installing on a VirtualBox VM
+### 2. [Downloading Windows Server 2022 and Installing on a VirtualBox VM](https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Windows-Server-2022-VM-setup.md)
 
 - Obtain the Windows Server 2022 ISO from Microsoft Evaluation Center.  
 - Set up a new VirtualBox VM with recommended specs (8 GB RAM, 2–4 CPUs).  
@@ -114,7 +114,7 @@ There are many projects you can complete using this home lab, including:
 
 ---
 
-### 3. Installing Active Directory Domain Services and Promoting to a Domain Controller
+### 3. [Installing Active Directory Domain Services and Promoting to a Domain Controller](https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Config-Server-as-AD-Domain-Controller.md)
 
 - Log in to your Server VM as the Administrator and open Server Manager.  
 - Add the Active Directory Domain Services (AD DS) role and complete feature installation.  
@@ -124,7 +124,7 @@ There are many projects you can complete using this home lab, including:
 
 ---
 
-### 4. Configuring Network Settings (NAT Network and DNS)
+### 4. [Configuring Network Settings (NAT Network and DNS)](https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Configure-Network-Settings.md)
 
 - Configure both the Server and Windows 11 VM to use a **NAT Network** in VirtualBox.  
 - Assign a static IP address to the Domain Controller VM and set its DNS to its own IP address.  
@@ -134,7 +134,7 @@ There are many projects you can complete using this home lab, including:
 
 ---
 
-### 5. Joining the Windows 11 VM to the Domain and Creating a User
+### 5. [Joining the Windows 11 VM to the Domain and Creating a User](https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Join-Windows11-VM-to-Domain.md)
 
 - Verify that the Windows 11 VM can resolve the domain and can ping the Domain Controller.  
 - Rename the Windows 11 VM (e.g. `WS01`), then join it to the Active Directory domain.  
