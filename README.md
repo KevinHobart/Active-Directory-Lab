@@ -120,7 +120,7 @@ There are many projects that can be completed using this home lab, including:
 
 - Log in to your Server VM as the Administrator and open Server Manager.  
 - Add the Active Directory Domain Services (AD DS) role and complete feature installation.  
-- Promote the server to a new forest and configure the desired domain name (e.g. `mydomain.local`).  
+- Promote the server to a Domain Controller and configure the desired domain name.  
 - Set a Directory Services Restore Mode (DSRM) password during promotion.  
 - Restart the server after promotion — it will now serve as the Domain Controller.
 
@@ -139,7 +139,7 @@ There are many projects that can be completed using this home lab, including:
 ### 5. ↔️[Joining the Windows 11 VM to the Domain and Creating a User](https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Join-Windows11-VM-to-Domain.md)
 
 - Verify that the Windows 11 VM can resolve the domain and can ping the Domain Controller.  
-- Rename the Windows 11 VM (e.g. `WS01`), then join it to the Active Directory domain.  
+- Rename the Windows 11 VM, then join it to the Active Directory domain.  
 - Restart the Windows 11 VM and log in as the local Administrator after joining.  
 - On the Server VM, create a new Active Directory user in **Active Directory Users and Computers**.  
 - Log in to the Windows 11 VM with the new domain user credentials to confirm successful setup.
