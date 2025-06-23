@@ -29,10 +29,12 @@ The primary goals of this project are:
 - **Windows 11:**
   - Download, install, and configure Windows 11 to be used as the client (end user) machine in an Active Directory domain.
 - **Windows Server 2022:**
-  - Download, install, and configure Windows Server 2022 for use as an Active Directory Domain Controller.
+  - Download, install, and configure Windows Server 2022 for use as an Active Directory Domain Controller (using Server Manager).
 - **Active Directory:**
   - Install and configure Active Directory Domain Services (AD DS) on Windows Server 2022, and promote to a Domain Controller.
   - Add Users to the domain.
+- **NAT and DNS**
+  - Configure a NAT Network with static IP adresses. Configure DNS on server VM (it will need to resolve hostnames inside of our network).
 
 ---
 
