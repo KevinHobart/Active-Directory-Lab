@@ -5,20 +5,11 @@
 ## Overview
 
 This project demonstrates the comprehensive setup of an Active Directory home lab using virtualization (VirtualBox).  
-The Active Directory home lab can then be used as a learning platform to simulate various IT workflows.  
-The primary goals of this project are:
-
-#### 1. Create two virtual machines on VirtualBox:
-  - Windows 11
-  - Windows Server 2022
-#### 2. Configure Windows 11 VM:
-  - Configure to allow connection with Active Directory domain.
-#### 3. Configure Windows Server 2022 VM:
-  - Add Active Directory service
-  - Promote to Domain Controller
-  - Add Users
-#### 4. Configure network settings
-#### 5. Join Windows 11 VM to Active Directory domain.
+The primary goal of this project is to create a basic Active Directory home lab environment that can be used to test various IT/SysAdmin workflows, such as:
+ - Creating and managing users.
+ - Creating and managing groups.
+ - Configuring and managing OUs (Organizational Units).
+ - Setting up and enforcing various policies.  
 
 ---
 
@@ -51,6 +42,7 @@ The primary goals of this project are:
 ---
 ---  
 
+
 ## A brief overview (from Microsoft Learn) of Active Directory Domain Services:  
 
 - A directory is a hierarchical structure that stores information about objects on a network. A directory service, such as Active Directory Domain Services (AD DS), provides the methods for storing directory data and making this data available to --network users and administrators. For example, AD DS stores information about user accounts, such as names, passwords, phone numbers, and so on. AD DS also provides a way for authorized users on the same network to access this information.
@@ -63,37 +55,33 @@ The primary goals of this project are:
 - Policy-based administration eases the management of even the most complex network.
 - Link: [Active Directory Domain Services overview](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)
 
-## Steps for creating and setting up the lab environment.  
+---
+---
+
+# Project Steps for creating and setting up the lab environment.  
 
 This project consists of five components for setting up an Active Directory home lab environment.  
-The following is a table of contents in the recommended order of completion:  
 
+## Table of Contents:
+ 
 1. Downloading and installing Windows 11 ISO (VirtualBox).
-   - [AD-Lab_Setup/Windows11-VM-setup.md](https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Windows11-VM-setup.md)
+   
 2. Downloading and installing Windows Server 2022 ISO (VirtualBox).
-   - [AD-Lab_Setup/Windows-Server-2022-VM-setup.md](https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Windows-Server-2022-VM-setup.md)
+   
 3. Install Active Directory Domain Services on the Windows Server 2022 VM, and promote to a Domain Controller.
-   - [AD-Lab_Setup/Config-Server-as-AD-Domain-Controller.md](https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Config-Server-as-AD-Domain-Controller.md)
+  
 4. Configure Network settings: Setting up NAT Network and DNS.
-   - [AD-Lab_Setup/Configure-Network-Settings.md](https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Configure-Network-Settings.md)
+   
 5. Joining the Windows 11 VM to the Active Directory domain.
-   - [AD-Lab_Setup/Join-Windows11-VM-to-Domain.md](https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Join-Windows11-VM-to-Domain.md)
-
----
+   
 ---
 
-# Project steps:
+# Project steps (with links):
 Listed below are summaries of each step for completing this project.  The link in each step will take you to full tutorial page for that step.  When all steps have been completed, you will have successfuly set up a basic Active Directory home lab, consisting of:  
  - Windows 11 client machine.
  - Windows server 2022 with Active Directory Domain Services installed.
  - One domain user, and a domain administrator (sysadmin).
      
-There are many projects that can be completed using this home lab, including: 
- - Creating and managing users.
- - Creating and managing groups.
- - Configuring and managing OUs (Organizational Units).
- - Setting up and enforcing various policies.  
-
 ---
 
 ### 1. 💻[Downloading Windows 11 ISO and Installing on a VirtualBox VM.](https://github.com/KevinHobart/Active-Directory-Lab/blob/main/AD-Lab_Setup/Windows11-VM-setup.md)
